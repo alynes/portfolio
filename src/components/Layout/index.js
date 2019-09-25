@@ -1,21 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 // Material Design
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import MUIDrawer from "@material-ui/core/Drawer";
-import MenuIcon from "@material-ui/icons/Menu";
-import IconButton from "@material-ui/core/IconButton";
-import Hidden from "@material-ui/core/Hidden";
+import { makeStyles } from '@material-ui/core';
+import Hidden from '@material-ui/core/Hidden';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import MUIDrawer from '@material-ui/core/Drawer';
+import MenuIcon from '@material-ui/icons/Menu';
+import IconButton from '@material-ui/core/IconButton';
 
 // My components
 import MyDrawer from './Drawer.js';
-import {makeStyles} from "@material-ui/core";
 
 // Styles
-const drawerWidth = 240;
+const drawerWidth = 300;
 const useStyles = makeStyles(theme => ({
     drawer: {
         [theme.breakpoints.up("lg")]: {
@@ -28,16 +28,15 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-export default function Layout({ component }) {
+export default function Layout({ component, match, ...props }) {
     const classes = useStyles();
-
-    const [drawerOpen, setDrawerOpen] = React.useState(false);
+    const [drawerOpen, setDrawerOpen] = useState(false);
 
     function handleDrawerToggle() {
         setDrawerOpen(!drawerOpen);
     }
 
-    const drawer = <MyDrawer />;
+    const drawer = <MyDrawer props={props}/>;
 
     return(
         <div>
@@ -53,13 +52,13 @@ export default function Layout({ component }) {
                             <MenuIcon />
                         </IconButton>
                         <Typography variant="h6" noWrap>
-                            Austin Lynes
+                            {/*App bar title here*/}
                         </Typography>
                     </Toolbar>
                 </AppBar>
                 <nav className={classes.drawer} aria-label="menu items">
                     {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-                    <Hidden lgUp implementation="css">
+                    <Hidden xlUp implementation="css">
                         <MUIDrawer
                             // container={container}
                             variant="temporary"
@@ -67,7 +66,7 @@ export default function Layout({ component }) {
                             open={drawerOpen}
                             onClose={handleDrawerToggle}
                             classes={{
-                                paper: ""
+                                paper: classes.drawerPaper
                             }}
                             ModalProps={{
                                 keepMounted: true // Better open performance on mobile.
@@ -76,7 +75,7 @@ export default function Layout({ component }) {
                             {drawer}
                         </MUIDrawer>
                     </Hidden>
-                    <Hidden mdDown implementation="css">
+                    <Hidden lgDown implementation="css">
                         <MUIDrawer
                             classes={{
                                 paper: classes.drawerPaper
@@ -90,14 +89,15 @@ export default function Layout({ component }) {
                 </nav>
             </div>
             <div>
+                <Toolbar />
                 {component}
             </div>
         </div>
     )
-
 }
 
 Layout.propTypes = {
-    component: PropTypes.object,
+    component: PropTypes.object.isRequired,
+    match: PropTypes.object.isRequired,
 
 };
