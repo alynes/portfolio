@@ -15,7 +15,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MyDrawer from './Drawer.js';
 
 // Styles
-const drawerWidth = 300;
+const drawerWidth = 270;
 const useStyles = makeStyles(theme => ({
     drawer: {
         [theme.breakpoints.up("lg")]: {
@@ -57,35 +57,21 @@ export default function Layout({ component, match, ...props }) {
                     </Toolbar>
                 </AppBar>
                 <nav className={classes.drawer} aria-label="menu items">
-                    {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-                    <Hidden xlUp implementation="css">
-                        <MUIDrawer
-                            // container={container}
-                            variant="temporary"
-                            anchor={"left"}
-                            open={drawerOpen}
-                            onClose={handleDrawerToggle}
-                            classes={{
-                                paper: classes.drawerPaper
-                            }}
-                            ModalProps={{
-                                keepMounted: true // Better open performance on mobile.
-                            }}
-                        >
-                            {drawer}
-                        </MUIDrawer>
-                    </Hidden>
-                    <Hidden lgDown implementation="css">
-                        <MUIDrawer
-                            classes={{
-                                paper: classes.drawerPaper
-                            }}
-                            variant="permanent"
-                            open
-                        >
-                            {drawer}
-                        </MUIDrawer>
-                    </Hidden>
+                    <MUIDrawer
+                        // container={container}
+                        variant="temporary"
+                        anchor={"left"}
+                        open={drawerOpen}
+                        onClose={handleDrawerToggle}
+                        classes={{
+                            paper: classes.drawerPaper
+                        }}
+                        ModalProps={{
+                            keepMounted: true // Better open performance on mobile.
+                        }}
+                    >
+                        {drawer}
+                    </MUIDrawer>
                 </nav>
             </div>
             <div>
