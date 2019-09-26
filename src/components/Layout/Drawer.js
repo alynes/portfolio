@@ -37,7 +37,7 @@ export default function Drawer() {
         <div id={"fuckin drawer"}>
             <Toolbar>
                 <div className={classes.clockContainer}>
-                    <img className={classes.img} src={process.env.PUBLIC_URL + '/GREECEHAT.gif'} alt={"create response"}/>
+                    <img className={classes.img} src={process.env.PUBLIC_URL + '/tourists.gif'} alt={"tourists"}/>
                     <Clock />
                 </div>
             </Toolbar>

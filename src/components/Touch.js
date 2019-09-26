@@ -12,21 +12,23 @@ export default function Touch({ component, threshold, x=null, setX=null, y=null,
         let difY = nowY - startY;
 
         // if beyond threshold, change an index
-        if (!(x === null)) {
+        if (x !== null) {
             if (Math.abs(difX) >= threshold) {
                 if (difX > 0) {
                     console.log("X + 1!!");
                     setX(x + 1);
                     setCalculate(false);
+                    setNowX(startX);
 
                 } else {
                     console.log("X - 1!!");
                     setX(x - 1);
                     setCalculate(false);
+                    setNowX(startX);
                 }
             }
         }
-        if (!(y === null)) {
+        if (y !== null) {
             if (Math.abs(difY) >= threshold) {
                 if (difY > 0) {
                     console.log("Y - 1");
@@ -46,12 +48,13 @@ export default function Touch({ component, threshold, x=null, setX=null, y=null,
             <div style={{display: "inline-block"}}
                  // Mouse Events
                 onMouseDown={(e) => {
+                    e.preventDefault();
                     setCalculate(true);
                     setStartX(e.pageX);
                     setStartY(e.pageY);
                 }}
                 onMouseMove={(e) => {
-                    if (calculate) {
+                    if (calculate === true) {
                         setNowX(e.pageX);
                         setNowY(e.pageY);
                     }
@@ -64,6 +67,7 @@ export default function Touch({ component, threshold, x=null, setX=null, y=null,
                 }}
                  // Touch Events
                 onTouchStart={(e) => {
+                    e.preventDefault();
                     setCalculate(true);
                     setStartX(e.touches[0].pageX);
                     setStartY(e.touches[0].pageY);
