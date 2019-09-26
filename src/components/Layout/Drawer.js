@@ -13,6 +13,7 @@ import MusicNoteIcon from '@material-ui/icons/MusicNote';
 
 // My Components
 import DrawerItem from './DrawerItem.js';
+import Clock from '../Clock.js';
 
 export default function Drawer(props) {
     const homeIcon = <HomeIcon />;
@@ -25,7 +26,9 @@ export default function Drawer(props) {
 
     return (
         <div>
-            <Toolbar />
+            <Toolbar>
+                <Clock />
+            </Toolbar>
             <Divider />
             <List>
                 <DrawerItem text={"Home"} url={""} svg={homeIcon} />

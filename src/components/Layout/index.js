@@ -13,6 +13,7 @@ import IconButton from '@material-ui/core/IconButton';
 
 // My components
 import MyDrawer from './Drawer.js';
+import Clock from '../Clock.js';
 
 // Styles
 const drawerWidth = 270;
