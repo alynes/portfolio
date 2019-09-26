@@ -11,7 +11,7 @@ import IconButton from '@material-ui/core/IconButton';
 
 // My components
 import MyDrawer from './Drawer.js';
-import Touch from '../Touch.js';
+import Swipe from '../Swipe.js';
 
 // Styles
 const drawerWidth = 270;
@@ -33,6 +33,7 @@ export default function Layout({ component, ...props }) {
     const [drawerOpen, setDrawerOpen] = useState(false);
 
     function handleDrawerToggle() {
+        console.log("OPEN drawer");
         setDrawerOpen(!drawerOpen);
     }
 
@@ -84,7 +85,9 @@ export default function Layout({ component, ...props }) {
                     </Toolbar>
                 </AppBar>
                 <nav className={classes.drawer} aria-label="menu items">
-                    <Touch component={drawer} x={touchIndex} setX={setTouchIndex} threshold={60} />
+                    <Swipe x={touchIndex} setX={setTouchIndex} threshold={60} >
+                        {drawer}
+                    </Swipe>
                 </nav>
             </div>
             <div>

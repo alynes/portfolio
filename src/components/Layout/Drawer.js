@@ -24,9 +24,14 @@ const useStyles = makeStyles(theme => ({
         alignItems: "center",
         justifyContent: "center"
     },
-
 }));
 
+/**
+ * The Drawer component is the sidebar for the layout.
+ *
+ * IN THIS APP:
+ * Layout
+ */
 export default function Drawer() {
     const classes = useStyles();
 
@@ -37,7 +42,7 @@ export default function Drawer() {
         <div id={"fuckin drawer"}>
             <Toolbar>
                 <div className={classes.clockContainer}>
-                    <img className={classes.img} src={process.env.PUBLIC_URL + '/GREECEHAT.gif'} alt={"create response"}/>
+                    <img className={classes.img} src={process.env.PUBLIC_URL + '/tourists.gif'} alt={"tourists"}/>
                     <Clock />
                 </div>
             </Toolbar>
