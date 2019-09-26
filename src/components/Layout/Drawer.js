@@ -34,7 +34,7 @@ export default function Drawer() {
     const appsIcon = <AppsIcon />;
 
     return (
-        <div>
+        <div id={"fuckin drawer"}>
             <Toolbar>
                 <div className={classes.clockContainer}>
                     <img className={classes.img} src={process.env.PUBLIC_URL + '/GREECEHAT.gif'} alt={"create response"}/>
