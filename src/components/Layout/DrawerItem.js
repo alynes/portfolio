@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 // Material Design
@@ -23,10 +22,3 @@ export default function DrawerItem({ text, url, svg }) {
         </ListItem>
     )
 }
-
-DrawerItem.propTypes = {
-    text: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
-    svg: PropTypes.object.isRequired,
-
-};

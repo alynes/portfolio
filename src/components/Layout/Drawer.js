@@ -1,39 +1,50 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 // Material Design
+import { makeStyles } from "@material-ui/core";
 import Divider from '@material-ui/core/Divider';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
-import HistoryIcon from '@material-ui/icons/History';
-import PersonIcon from '@material-ui/icons/Person';
 import HomeIcon from '@material-ui/icons/Home';
 import AppsIcon from '@material-ui/icons/Apps';
-import MusicNoteIcon from '@material-ui/icons/MusicNote';
 
 // My Components
 import DrawerItem from './DrawerItem.js';
 import Clock from '../Clock.js';
 
-export default function Drawer(props) {
-    const homeIcon = <HomeIcon />;
-    const historyIcon = <HistoryIcon />;
-    const personIcon = <PersonIcon />;
-    const appsIcon = <AppsIcon />;
-    const musicNoteIcon = <MusicNoteIcon />;
+const useStyles = makeStyles(theme => ({
+    img: {
+        width: '100%',
+        flex: 1,
+    },
+    clockContainer: {
+        display: "flex",
+        width: "100%",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center"
+    },
 
-    console.log(props);
+}));
+
+export default function Drawer() {
+    const classes = useStyles();
+
+    const homeIcon = <HomeIcon />;
+    const appsIcon = <AppsIcon />;
 
     return (
         <div>
             <Toolbar>
-                <Clock />
+                <div className={classes.clockContainer}>
+                    <img className={classes.img} src={process.env.PUBLIC_URL + '/GREECEHAT.gif'} alt={"create response"}/>
+                    <Clock />
+                </div>
             </Toolbar>
             <Divider />
             <List>
                 <DrawerItem text={"Home"} url={""} svg={homeIcon} />
                 <DrawerItem text={"Applications"} url={"/applications/"} svg={appsIcon} />
-                {/*<DrawerItem text={"Contact"} url={"BPChronicles"} svg={musicNoteIcon} />*/}
 
             </List>
         </div>

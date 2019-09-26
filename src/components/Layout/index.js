@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 
 // Material Design
 import { makeStyles } from '@material-ui/core';
-import Hidden from '@material-ui/core/Hidden';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -13,7 +11,6 @@ import IconButton from '@material-ui/core/IconButton';
 
 // My components
 import MyDrawer from './Drawer.js';
-import Clock from '../Clock.js';
 
 // Styles
 const drawerWidth = 270;
@@ -29,7 +26,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-export default function Layout({ component, match, ...props }) {
+export default function Layout({ component, ...props }) {
     const classes = useStyles();
     const [drawerOpen, setDrawerOpen] = useState(false);
 
@@ -55,6 +52,8 @@ export default function Layout({ component, match, ...props }) {
                         <Typography variant="h6" noWrap>
                             {/*App bar title here*/}
                         </Typography>
+                        <div style={{flex: 1}} />
+                        <img style={{height: "70px", margin: "-10px"}} src={process.env.PUBLIC_URL + '/bipolar record.gif'} alt={"create response"}/>
                     </Toolbar>
                 </AppBar>
                 <nav className={classes.drawer} aria-label="menu items">
@@ -82,9 +81,3 @@ export default function Layout({ component, match, ...props }) {
         </div>
     )
 }
-
-Layout.propTypes = {
-    component: PropTypes.object.isRequired,
-    match: PropTypes.object.isRequired,
-
-};

@@ -25,14 +25,15 @@ const useStyles = makeStyles(theme => ({
             gridTemplateColumns: '1fr 1fr',
             gridTemplateRows: '1fr 1fr',
             margin: '3%',
+            marginTop: '3vh',
         },
         [theme.breakpoints.up('md')]: {
             gridTemplateColumns: '1fr 1fr 1fr',
             gridTemplateRows: '1fr 1fr',
             margin: 'auto',
+            marginTop: '3vh',
         }
     },
-
 }));
 
 export default function Applications() {
@@ -40,8 +41,6 @@ export default function Applications() {
 
     return (
         <div>
-            <h1>Applications</h1>
-            <Divider />
             <div className={classes.grid}>
                 <div>
                     <img className={classes.img} src={process.env.PUBLIC_URL + '/social-auto-create-response.gif'} alt={"create response"}/>
@@ -59,6 +58,7 @@ export default function Applications() {
                     <p>Interactive musical experience</p>
                 </div>
             </div>
+            <Divider />
         </div>
     )
 }

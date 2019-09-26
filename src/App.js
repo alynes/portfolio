@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 
@@ -8,7 +8,6 @@ import Home from './components/Home/index.js';
 import Applications from './components/Applications/index.js';
 
 export default function App() {
-
     return (
         <div className="App">
             <Router>
