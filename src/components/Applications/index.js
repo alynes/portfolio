@@ -36,6 +36,10 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
+/**
+ * This page displays applications I have created in grid format.
+ *
+ */
 export default function Applications() {
     const classes = useStyles();
 

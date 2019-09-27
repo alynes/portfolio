@@ -24,9 +24,14 @@ const useStyles = makeStyles(theme => ({
         alignItems: "center",
         justifyContent: "center"
     },
-
 }));
 
+/**
+ * The Drawer component is the sidebar for the layout.
+ *
+ * IN THIS APP:
+ * Layout
+ */
 export default function Drawer() {
     const classes = useStyles();
 

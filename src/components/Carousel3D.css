@@ -1,6 +1,14 @@
+.carousel-img {
+    position: absolute;
+    transform: translate(-50%, 0);
+    height: 100%;
+    left: 50%;
+    pointer-events: none;
+}
+
 /* DEFAULT */
-.side {
-    display: inline-block;
+.slide {
+    transform: translate3d(0, 0, 0);
 }
 
 .slide-appear {
@@ -9,7 +17,7 @@
 
 .slide-appear-active {
     opacity: 1;
-    transition: opacity 300ms linear;
+    transition: opacity 600ms ease-in-out;
 }
 
 .slide-exit {
@@ -18,7 +26,7 @@
 
 .slide-exit-active {
     opacity: 0;
-    transition: opacity 300ms linear;
+    transition: opacity 600ms ease-in-out;
 }
 
 .slide-exit-done {
@@ -29,88 +37,84 @@
 
 /*appear*/
 .slideRight-appear {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(-100%, 0, 0)  rotate3d(0, 1, 0, -90deg);
 }
 
 .slideRight-appear-active {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-    transition: transform 1000ms ease-out, opacity 500ms linear;
+    transform: translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    transition: transform 600ms ease-in-out;
 }
 
 /*enter*/
 
 .slideRight-enter {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(-100%, 0, 0)  rotate3d(0, 1, 0, -90deg);
 }
 
 .slideRight-enter-active {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-    transition: transform 1000ms ease-out, opacity 500ms linear;
+    transform: translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    transition: transform 600ms ease-in-out;
 }
 
 .slideRight-enter-done {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
 
 }
 
 /*exit*/
 
 .slideRight-exit {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
 }
 
 .slideRight-exit-active {
-    transform: translate3d(-100%, 0, 0);
-    transition: transform 1000ms ease-out;
+    transform: translate3d(100%, 0, 0)  rotate3d(0, 1, 0, 90deg);
+    transition: transform 600ms ease-in-out;
 }
 
 .slideRight-exit-done {
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(100%, 0, 0)  rotate3d(0, 1, 0, 90deg);
 }
 
 /* LEFT */
 
 /*appear*/
 .slideLeft-appear {
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(100%, 0, 0)  rotate3d(0, 1, 0, 90deg);
 }
 
 .slideLeft-appear-active {
-    transform: translate3d(0, 0, 0);
-    transition: transform 1000ms ease-out;
+    transform: translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    transition: transform 600ms ease-in-out;
 }
 
 /*enter*/
 
 .slideLeft-enter {
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(100%, 0, 0)  rotate3d(0, 1, 0, 90deg);
 }
 
 .slideLeft-enter-active {
-    transform: translate3d(0, 0, 0);
-    transition: transform 1000ms ease-out;
+    transform: translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    transition: transform 600ms ease-in-out;
 }
 
 .slideLeft-enter-done {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
 
 }
 
 /*exit*/
 
 .slideLeft-exit {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
 }
 
 .slideLeft-exit-active {
-    transform: translate3d(100%, 0, 0);
-    transition: transform 1000ms ease-out;
+    transform: translate3d(-100%, 0, 0)  rotate3d(0, 1, 0, -90deg);
+    transition: transform 600ms ease-in-out;
 }
 
 .slideLeft-exit-done {
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(-100%, 0, 0)  rotate3d(0, 1, 0, -90deg);
 }
