@@ -31,7 +31,6 @@ export default function Home() {
 
     return (
         <div style={{position: 'relative', width: '100%', height: '100%'}}>
-            <h1>Home Page</h1>
             <Divider />
             <div className={classes.carouselContainer}>
                 <Swipe threshold={20} x={carouselIndex} setX={setCarouselIndex} setDirection={setCarouselDirection}>
@@ -42,6 +41,8 @@ export default function Home() {
                     </Carousel3D>
                 </Swipe>
             </div>
+            <p>This is the portfolio page for Austin Lynes. A man of many talents, but the most notable are his achievements in
+            software development.</p>
         </div>
     )
 }
