@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-export default function Layout({ component, ...props }) {
+export default function Layout({ children, ...props }) {
     const classes = useStyles();
     const [touchIndex, setTouchIndex] = useState(0);
     const [drawerOpen, setDrawerOpen] = useState(false);
@@ -60,7 +60,7 @@ export default function Layout({ component, ...props }) {
                 keepMounted: true // Better open performance on mobile.
             }}
         >
-            <MyDrawer props={props}/>
+            <MyDrawer />
         </MUIDrawer>
     );
 
@@ -92,7 +92,7 @@ export default function Layout({ component, ...props }) {
             </div>
             <div>
                 <Toolbar />
-                {component}
+                {children}
             </div>
         </div>
     )

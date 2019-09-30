@@ -1,8 +1,36 @@
 import React from 'react';
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 // Material Design
 import { makeStyles } from "@material-ui/core";
 import Divider from '@material-ui/core/Divider';
+
+// My Components
+import TradeBoy from './TradeBoy.js';
+
+const applications = [
+    {
+        name: 'TradeBoy',
+        description: 'Experimental cryptocurrency trading',
+        id: 'trade-boy',
+        src: '/tradeboy-trade.gif',
+        alt: 'Experimental crytocurrency trading app'
+    },
+    {
+        name: 'The Bipolar Chronicles',
+        description: 'Interactive musical experience',
+        id: 'bp-chronicles',
+        src: '/bp-chronicles-build.gif',
+        alt: 'Interactive musical experience application'
+    },
+    {
+        name: 'SocialAutomator',
+        description: 'Social media automation',
+        id: 'social-automator',
+        src: '/social-auto-create-response.gif',
+        alt: 'Social media automation application'
+    }
+];
 
 const useStyles = makeStyles(theme => ({
     img: {
@@ -10,9 +38,9 @@ const useStyles = makeStyles(theme => ({
         flex: 1,
     },
     grid: {
-        display: "grid",
+        display: 'grid',
         justifyItems: 'center',
-        alignItems: 'end',
+        alignItems: 'start',
         gridGap: '30px 30px',
         maxWidth: '1200px',
 
@@ -46,21 +74,15 @@ export default function Applications() {
     return (
         <div>
             <div className={classes.grid}>
-                <div>
-                    <img className={classes.img} src={process.env.PUBLIC_URL + '/social-auto-create-response.gif'} alt={"create response"}/>
-                    <h2>Social Automator</h2>
-                    <p>Social media automation</p>
-                </div>
-                <div>
-                    <img className={classes.img} src={process.env.PUBLIC_URL + '/tradeboy-trade.gif'} alt={"BP play"}/>
-                    <h2>Trade Boy</h2>
-                    <p>Experimental cryptocurrency trading</p>
-                </div>
-                <div>
-                    <img className={classes.img} src={process.env.PUBLIC_URL + '/bp-chronicles-build.gif'} alt={"BP build"}/>
-                    <h2>The Bipolar Chronicles</h2>
-                    <p>Interactive musical experience</p>
-                </div>
+                {applications.map((app) => (
+                    <Link to={`/applications/${app.id}`}>
+                    <div key={app.id}>
+                        <h2>{app.name}</h2>
+                        <p>{app.description}</p>
+                        <img className={classes.img} src={process.env.PUBLIC_URL + app.src} alt={app.alt}/>
+                    </div>
+                    </Link>
+                ))}
             </div>
             <Divider />
         </div>
