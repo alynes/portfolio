@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-export default function Layout({ children, ...props }) {
+export default function Layout({ children }) {
     const classes = useStyles();
     const [touchIndex, setTouchIndex] = useState(0);
     const [drawerOpen, setDrawerOpen] = useState(false);
