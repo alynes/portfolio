@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 // Material Design
 import { makeStyles } from "@material-ui/core";
@@ -33,10 +33,6 @@ const applications = [
 ];
 
 const useStyles = makeStyles(theme => ({
-    img: {
-        width: '100%',
-        flex: 1,
-    },
     grid: {
         display: 'grid',
         justifyItems: 'center',
@@ -75,11 +71,11 @@ export default function Applications() {
         <div>
             <div className={classes.grid}>
                 {applications.map((app) => (
-                    <Link to={`/applications/${app.id}`}>
+                    <Link to={`/applications/${app.id}`} style={{textDecoration: "none"}}>
                     <div key={app.id}>
-                        <h2>{app.name}</h2>
-                        <p>{app.description}</p>
-                        <img className={classes.img} src={process.env.PUBLIC_URL + app.src} alt={app.alt}/>
+                        <h1 style={{textAlign: "center"}} className={"App-link"}>{app.name}</h1>
+                        <p style={{textAlign: "center"}} className={"App-link"}>{app.description}</p>
+                        <img className={"App-img"} src={process.env.PUBLIC_URL + app.src} alt={app.alt}/>
                     </div>
                     </Link>
                 ))}

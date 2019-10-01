@@ -18,16 +18,35 @@
 }
 
 .App-link {
-  color: #09d3ac;
-}
-
-a {
   color: black;
   text-decoration: none;
 }
 
-a:hover {
-  color: #222233;
+.App-link:hover {
+  color: #333344;
   text-decoration: underline;
   text-decoration-style: solid;
+}
+
+.App-img {
+  width: 100%;
+  height: auto;
+}
+
+.App-img-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80vmin;
+  margin: auto;
+}
+
+.App-page {
+  max-width: 850px;
+  padding: 0 8%;
+  margin: auto;
+  text-align: left;
+}
+
+p {
+  text-align: justify;
 }
