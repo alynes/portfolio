@@ -27,6 +27,9 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
+/**
+ * This component handles the layout of the app, including the navbar and side drawer.
+ */
 export default function Layout({ children }) {
     const classes = useStyles();
     const [swipeIndex, setSwipeIndex] = useState(0);
@@ -37,9 +40,9 @@ export default function Layout({ children }) {
         setDrawerOpen(!drawerOpen);
     }
 
+    // if swiped, hide drawer.
     useEffect(() => {
         if (swipeIndex < 0) {
-            console.log("CLOSE");
             setDrawerOpen(false);
             setSwipeIndex(0);
         } else {
