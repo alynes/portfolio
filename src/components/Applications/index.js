@@ -71,8 +71,8 @@ export default function Applications() {
         <div>
             <div className={classes.grid}>
                 {applications.map((app) => (
-                    <Link to={`/applications/${app.id}`} style={{textDecoration: "none"}}>
-                    <div key={app.id}>
+                    <Link key={app.id} to={`/applications/${app.id}`} style={{textDecoration: "none"}}>
+                    <div>
                         <h1 style={{textAlign: "center"}} className={"App-link"}>{app.name}</h1>
                         <p style={{textAlign: "center"}} className={"App-link"}>{app.description}</p>
                         <img className={"App-img"} src={process.env.PUBLIC_URL + app.src} alt={app.alt}/>

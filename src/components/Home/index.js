@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
         overflow: "hidden",
         margin: "auto",
         backgroundColor: "none",
-        border: "2px solid grey"
+        // border: "2px solid grey"
     }
 }));
 
@@ -30,7 +30,7 @@ export default function Home() {
         <div className={"App-page"}>
             <Divider />
             <div className={classes.carouselContainer}>
-                <Carousel3D>
+                <Carousel3D autoInterval={5}>
                     <img className={"carousel-img"} src={process.env.PUBLIC_URL + '/avesa animated.gif'} alt={"avesa"}/>
                     <img className={"carousel-img"} src={process.env.PUBLIC_URL + '/bp-chronicles-play.gif'} alt={"record"}/>
                     <img className={"carousel-img"} src={process.env.PUBLIC_URL + '/tourists.gif'} alt={"create response"}/>
