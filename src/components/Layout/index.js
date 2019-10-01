@@ -27,9 +27,12 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
+/**
+ * This component handles the layout of the app, including the navbar and side drawer.
+ */
 export default function Layout({ children }) {
     const classes = useStyles();
-    const [touchIndex, setTouchIndex] = useState(0);
+    const [swipeIndex, setSwipeIndex] = useState(0);
     const [drawerOpen, setDrawerOpen] = useState(false);
 
     function handleDrawerToggle() {
@@ -37,15 +40,15 @@ export default function Layout({ children }) {
         setDrawerOpen(!drawerOpen);
     }
 
+    // if swiped, hide drawer.
     useEffect(() => {
-        if (touchIndex < 0) {
-            console.log("CLOSE");
+        if (swipeIndex < 0) {
             setDrawerOpen(false);
-            setTouchIndex(0);
+            setSwipeIndex(0);
         } else {
-            setTouchIndex(0);
+            setSwipeIndex(0);
         }
-    }, [touchIndex]);
+    }, [swipeIndex]);
 
     const drawer = (
         <MUIDrawer
@@ -67,7 +70,7 @@ export default function Layout({ children }) {
     return(
         <div>
             <div>
-                <AppBar position="fixed" className={""} style={{display: "block"}}>
+                <AppBar position="fixed" style={{display: "block"}}>
                     <Toolbar>
                         <IconButton
                             color="inherit"
@@ -81,11 +84,11 @@ export default function Layout({ children }) {
                             {/*App bar title here*/}
                         </Typography>
                         <div style={{flex: 1}} />
-                        <img style={{height: "70px", margin: "-10px"}} src={process.env.PUBLIC_URL + '/bipolar record.gif'} alt={"create response"}/>
+                        <img style={{height: "70px", margin: "-10px"}} src={process.env.PUBLIC_URL + "/bipolar record.gif"} alt={"create response"}/>
                     </Toolbar>
                 </AppBar>
                 <nav className={classes.drawer} aria-label="menu items">
-                    <Swipe x={touchIndex} setX={setTouchIndex} threshold={60} >
+                    <Swipe x={swipeIndex} setX={setSwipeIndex} threshold={30} >
                         {drawer}
                     </Swipe>
                 </nav>
