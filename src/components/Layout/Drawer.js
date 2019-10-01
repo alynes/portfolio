@@ -50,7 +50,6 @@ export default function Drawer() {
             <List>
                 <DrawerItem text={"Home"} url={""} svg={homeIcon} />
                 <DrawerItem text={"Applications"} url={"/applications/"} svg={appsIcon} />
-
             </List>
         </div>
     )

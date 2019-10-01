@@ -1,21 +1,24 @@
-import React, { Fragment } from 'react';
+import React, { useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import './Carousel3D.css';
+import Swipe from './Swipe.js';
 
 /**
  *   This component will place any provided 'children' into a rotating carousel.
- *   It will display the 'index'ed position child element, and use 'direction' ('left' or 'right') to
+ *   It will display the 'index' position child element, and use 'direction' ('left' or 'right') to
  *   determine which CSSTransition to animate the carousel.
  *
  *   It will attempt to fill it's parent component.
  *   Use any relatively positioned parent with overflow: 'hidden'.
  *
- *
  *   IN THIS APP:
  *   - Home
  */
-export default function Carousel3D({ index, direction, children }) {
+export default function Carousel3D({ children, initialIndex=0 }) {
+    const [index, setIndex] = useState(initialIndex);
+    const [direction, setDirection] = useState("none");
+
     let transitionClass;
     switch(direction) {
         case "right":
@@ -30,7 +33,7 @@ export default function Carousel3D({ index, direction, children }) {
     }
 
     return (
-        <Fragment>
+        <Swipe threshold={30} x={index} setX={setIndex} setDirection={setDirection}>
             <TransitionGroup
                 // This ensures that the next element receives the correct transition class BEFORE the transition
                 childFactory={element => React.cloneElement(
@@ -49,6 +52,6 @@ export default function Carousel3D({ index, direction, children }) {
                     </div>
                 </CSSTransition>
             </TransitionGroup>
-        </Fragment>
+        </Swipe>
     )
 }
