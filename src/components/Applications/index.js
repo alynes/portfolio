@@ -29,6 +29,7 @@ const applications = [
     }
 ];
 
+// Styles
 const useStyles = makeStyles(theme => ({
     grid: {
         display: 'grid',
@@ -58,7 +59,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 /**
- * This page displays applications I have created in grid format.
+ * This page displays my applications in grid format.
  *
  */
 export default function Applications() {
