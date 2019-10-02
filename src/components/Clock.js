@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
  *   - Drawer: Layout
  */
 export default function Clock() {
-    const time = useTime(new Date().toLocaleTimeString());
+    const time = useTime(new Date());
 
     return (
         <div style={{width: "100%", textAlign: "center"}}>
@@ -18,9 +18,10 @@ export default function Clock() {
 
 /**
  *   Custom effect to return the current local time each second.
+ *   @param { Date } currentDate
  */
 function useTime(currentDate) {
-    const [time, setTime] = useState(currentDate);
+    const [time, setTime] = useState(currentDate.toLocaleTimeString());
 
     useEffect(() => {
         let timeID = setInterval( () => tick(), 1000 );

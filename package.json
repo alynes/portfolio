@@ -12,14 +12,12 @@
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.1.0",
     "react-scripts": "3.1.2",
-    "react-transition-group": "^4.3.0",
-    "uuid": "^3.3.3"
+    "react-transition-group": "^4.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

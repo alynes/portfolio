@@ -5,42 +5,52 @@ import React, { useState, useEffect, Fragment } from 'react';
  *   If the swiped distance is more than 'threshold'(px) in a cardinal direction, then
  *   'x' and/or 'y' will increase or decrease by 1 accordingly — using 'setX' and 'setY'.
  *
- *   It makes children swipe-able. You can utilize React.useEffect() in another component
+ *   It makes 'children' elements swipe-able. You can utilize React.useEffect() in another component
  *   to do anything based on 'x' and/or 'y' increasing or decreasing by 1.
+ *
+ *  @param { Array | Object } children - This component adapts to fit the size of child element/s.
+ *  @param { Number } threshold - The minimum swiped distance (in pixels) that registers as a swipe.
+ *  @param { Number=null } x - is used to determine what 'x' value is next when when a X axis swipe is triggered.
+ *  @param { function=null } setX - sets 'x' from container component when a X axis swipe is triggered.
+ *  @param { Number=null } y - is used to determine what 'y' value is next when when a Y axis swipe is triggered.
+ *  @param { function=null } setY - sets 'y' from container component when a Y axis swipe is triggered.
+ *  @param { function=null } setDirection - sets the direction ('left', 'right', 'up', 'down') based on changes in 'x' and 'y'.
+ *  @param { boolean=false } revX - reverse effect on 'x'.
+ *  @param { boolean=false } revY - reverse effect on 'y'.
  *
  *   IN THIS APP:
  *   - Closing the Drawer: Layout
  *   - Navigating Carousel3D: Home
  */
-export default function Swipe({ threshold, x=null, setX=null, y=null, setY=null, setDirection=null, revX=null, revY=null, children }) {
-    const [calculate, setCalculate] = useState(0);
-    const [startX, setStartX] = useState(0);
-    const [startY, setStartY] = useState(0);
-    const [nowX, setNowX] = useState(0);
-    const [nowY, setNowY] = useState(0);
+export default function Swipe({ children, threshold, x=null, setX=null, y=null, setY=null, setDirection=null, revX=false, revY=false }) {
+    const [calculating, setCalculating] = useState(0);  // Calculate differences in 'x' and 'y' swipe coordinates while true.
+    const [startX, setStartX] = useState(null);  // Initial x coordinate on swipe-start.
+    const [startY, setStartY] = useState(null);  // Initial y coordinate on swipe-start.
+    const [nowX, setNowX] = useState(null);  // Current x coordinate while swiping.
+    const [nowY, setNowY] = useState(null);  // Current y coordinate while swiping.
 
-    // calculate touch/mouse positions
+    // Calculate touch/mouse positions.
     useEffect(() => {
         let difX = nowX - startX;
         let difY = nowY - startY;
 
-        // if beyond threshold, change an index
+        // If beyond threshold, change an index.
         if (x !== null) {
             if (Math.abs(difX) >= threshold) {
                 if (difX > 0) {
-                    revX === null ? setX(x + 1) : setX(x - 1);
+                    revX === false ? setX(x + 1) : setX(x - 1);
                     if (setDirection !== null) {
                         setDirection("right");
                     }
-                    setCalculate(false);
+                    setCalculating(false);
                     setNowX(startX);
 
                 } else {
-                    revX === null ? setX(x - 1) : setX(x + 1);
+                    revX === false ? setX(x - 1) : setX(x + 1);
                     if (setDirection !== null) {
                         setDirection("left");
                     }
-                    setCalculate(false);
+                    setCalculating(false);
                     setNowX(startX);
                 }
             }
@@ -50,18 +60,18 @@ export default function Swipe({ threshold, x=null, setX=null, y=null, setY=null,
             if (Math.abs(difY) >= threshold) {
                 if (difY > 0) {
                     console.log("Y - 1");
-                    revY === null ? setY(y - 1) : setY(y + 1);
+                    revY === false ? setY(y - 1) : setY(y + 1);
                     if (setDirection !== null) {
                         setDirection("down");
                     }
-                    setCalculate(false);
+                    setCalculating(false);
                 } else {
                     console.log("Y + 1");
-                    revY === null ? setY(y + 1) : setY(y - 1);
+                    revY === false ? setY(y + 1) : setY(y - 1);
                     if (setDirection !== null) {
                         setDirection("up");
                     }
-                    setCalculate(false);
+                    setCalculating(false);
                 }
             }
         }
@@ -73,37 +83,37 @@ export default function Swipe({ threshold, x=null, setX=null, y=null, setY=null,
                 // Touch
                 onTouchStart={(e) => {
                     e.preventDefault();
-                    setCalculate(true);
+                    setCalculating(true);
                     setStartX(e.touches[0].pageX);
                     setStartY(e.touches[0].pageY);
                 }}
                 onTouchMove={(e) => {
-                    if (calculate) {
+                    if (calculating) {
                         setNowX(e.touches[0].pageX);
                         setNowY(e.touches[0].pageY);
                     }
                 }}
                 onTouchEnd={() => {
-                    setCalculate(false);
+                    setCalculating(false);
                 }}
                 // Mouse
                 onMouseDown={(e) => {
                     e.preventDefault();
-                    setCalculate(true);
+                    setCalculating(true);
                     setStartX(e.pageX);
                     setStartY(e.pageY);
                 }}
                 onMouseMove={(e) => {
-                    if (calculate === true) {
+                    if (calculating === true) {
                         setNowX(e.pageX);
                         setNowY(e.pageY);
                     }
                 }}
                 onMouseUp={() => {
-                    setCalculate(false);
+                    setCalculating(false);
                 }}
                 onMouseLeave={() => {
-                    setCalculate(false);
+                    setCalculating(false);
                 }}
             >
                 {children}

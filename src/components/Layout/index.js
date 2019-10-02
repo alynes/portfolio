@@ -28,15 +28,17 @@ const useStyles = makeStyles(theme => ({
 }));
 
 /**
- * This component handles the layout of the app, including the navbar and side drawer.
+ * This component contains the nav-bar and side-drawer and handles their swiping.
+ *
+ * @param { Object | Array } children - 'children' are displayed in @content-area.
  */
 export default function Layout({ children }) {
     const classes = useStyles();
-    const [swipeIndex, setSwipeIndex] = useState(0);
-    const [drawerOpen, setDrawerOpen] = useState(false);
+    const [swipeIndex, setSwipeIndex] = useState(0);  // determines whether drawer is opening or closing
+    const [drawerOpen, setDrawerOpen] = useState(false); // displays drawer while true
 
     function handleDrawerToggle() {
-        console.log("OPEN drawer");
+        console.log('OPEN drawer');
         setDrawerOpen(!drawerOpen);
     }
 
@@ -93,7 +95,7 @@ export default function Layout({ children }) {
                     </Swipe>
                 </nav>
             </div>
-            <div>
+            <div id={"content-area"}>
                 <Toolbar />
                 {children}
             </div>

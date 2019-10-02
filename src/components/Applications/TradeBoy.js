@@ -1,37 +1,4 @@
 import React from 'react';
-import { makeStyles } from "@material-ui/core";
-
-const useStyles = makeStyles(theme => ({
-    img: {
-        width: '100%',
-        flex: 1,
-    },
-    grid: {
-        display: 'grid',
-        justifyItems: 'center',
-        alignItems: 'start',
-        gridGap: '30px 30px',
-        maxWidth: '1200px',
-
-        [theme.breakpoints.up('xs')]: {
-            gridTemplateColumns: '1fr',
-            gridTemplateRows: '1fr 1fr 1fr',
-            margin: '3%',
-        },
-        [theme.breakpoints.up('sm')]: {
-            gridTemplateColumns: '1fr 1fr',
-            gridTemplateRows: '1fr 1fr',
-            margin: '3%',
-            marginTop: '3vh',
-        },
-        [theme.breakpoints.up('md')]: {
-            gridTemplateColumns: '1fr 1fr 1fr',
-            gridTemplateRows: '1fr 1fr',
-            margin: 'auto',
-            marginTop: '3vh',
-        }
-    },
-}));
 
 export default function TradeBoy() {
 

@@ -1,25 +1,28 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import './Carousel3D.css';
 import Swipe from './Swipe.js';
 
 /**
- *   This component will place any provided 'children' into a rotating carousel.
- *   It will display the 'index' position child element, and use 'direction' ('left' or 'right') to
- *   determine which CSSTransition to animate the carousel.
+ *   This component places 'children' into a rotating carousel.
+ *   Use any relatively positioned parent with {overflow: 'hidden'}, and
+ *   it will attempt to fill it's parent component.
  *
- *   It will attempt to fill it's parent component.
- *   Use any relatively positioned parent with overflow: 'hidden'.
+ *  @param { Array | Object } children - The carousel displays all child elements.
+ *  @param { Number } initialIndex - 'initialIndex' determines the child element displayed on load.
+ *  @param { Number } autoInterval - Auto-swipe every 'autoInterval' seconds (at "0", does not auto-swipe).
+ *  @param { string } autoDirection - Auto-swipe to the 'autoDirection' ("left" | "right")
  *
  *   IN THIS APP:
  *   - Home
  */
 export default function Carousel3D({ children, initialIndex=0, autoInterval=0, autoDirection='left' }) {
-    const [index, setIndex] = useState(initialIndex);
-    const [direction, setDirection] = useState('none');
-    const [autoSwipe, setAutoSwipe] = useAutoSwipe(autoInterval);
+    const [index, setIndex] = useState(initialIndex);  // The carousel will display the 'index' positioned child element.
+    const [direction, setDirection] = useState('none');  // 'direction' ("left" or "right") determines which CSSTransitions to use for animating the carousel.
+    const [autoSwipe, setAutoSwipe] = useAutoSwipe(autoInterval);  // Sets 'autoSwipe' to true every 'autoInterval' seconds.
 
+    // Calculate swipe direction.
     useEffect(() => {
         if (autoSwipe === true) {
             if (autoDirection === 'left') {
@@ -29,6 +32,7 @@ export default function Carousel3D({ children, initialIndex=0, autoInterval=0, a
                 setIndex(index + 1);
                 setDirection('right')
             }
+            // Reset 'autoSwipe' to false after auto swipe.
             setAutoSwipe(false);
         }
     }, [autoSwipe]);
@@ -73,6 +77,8 @@ export default function Carousel3D({ children, initialIndex=0, autoInterval=0, a
 /**
  *   Custom effect to return true after X 'seconds', enabling auto-swipe for the carousel.
  *   Use setAutoSwipe(false) in parent component's 'useEffect' to react on 'autoSwipe' and reset.
+ *
+ *   @param { Number } seconds - Time interval between auto-swipes.
  */
 function useAutoSwipe(seconds) {
     const [autoSwipe, setAutoSwipe] = useState(false);

@@ -1,12 +1,9 @@
 import React from 'react';
-import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // Material Design
 import { makeStyles } from "@material-ui/core";
 import Divider from '@material-ui/core/Divider';
-
-// My Components
-import TradeBoy from './TradeBoy.js';
 
 const applications = [
     {
