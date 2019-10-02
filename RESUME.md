@@ -2,7 +2,7 @@
 ### Austin Lynes
 Phone: 469-268-2683 <br/>
 E-Mail: austinlynes7@gmail.com <br/>
-Linked-In: [linkedin.com/in/austin-lynes...](https://linkedin.com/in/austin-lynes-489771129)
+Linked-In: [linkedin.com/in/alynes](https://linkedin.com/in/alynes)
 
 # Objective
 Creative self-motivated software engineer — dedicated to the exploration of what technology can achieve, 
