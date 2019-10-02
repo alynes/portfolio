@@ -8,7 +8,8 @@ import Divider from '@material-ui/core/Divider';
 import Carousel3D from '../Carousel3D.js';
 import Applications from '../Applications/index.js';
 
-const useStyles = makeStyles(theme => ({
+// Styles
+const useStyles = makeStyles(() => ({
     carouselContainer: {
         position: "relative",
         display: "block",

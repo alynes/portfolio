@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Material Design
 import { makeStyles } from '@material-ui/core';
@@ -17,7 +17,7 @@ import Swipe from '../Swipe.js';
 const drawerWidth = 270;
 const useStyles = makeStyles(theme => ({
     drawer: {
-        [theme.breakpoints.up("lg")]: {
+        [theme.breakpoints.up('lg')]: {
             width: drawerWidth,
             flexShrink: 0
         }
@@ -28,21 +28,35 @@ const useStyles = makeStyles(theme => ({
 }));
 
 /**
- * This component contains the nav-bar and side-drawer and handles their swiping.
+ *    This component contains the nav-bar and side-drawer and handles their swiping.
  *
- * @param { Object | Array } children - 'children' are displayed in @content-area.
+ *    @param { Object | Array } children - 'children' are displayed in @content-area.
+ *    @param { Object } location - Scroll to top on change 'location.pathname'.
  */
-export default function Layout({ children }) {
+export default function Layout({ children, location }) {
     const classes = useStyles();
-    const [swipeIndex, setSwipeIndex] = useState(0);  // determines whether drawer is opening or closing
-    const [drawerOpen, setDrawerOpen] = useState(false); // displays drawer while true
+    const [swipeIndex, setSwipeIndex] = useState(0);  // determines whether drawer is opening or closing.
+    const [drawerOpen, setDrawerOpen] = useState(false); // displays drawer while true.
+
+    // Scroll to top on change location.pathname
+    useEffect(() => {
+        try {
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: 'smooth',
+            });
+        } catch (error) {
+            // For older browsers
+            window.scrollTo(0, 0);
+        }
+    }, [location.pathname]);
 
     function handleDrawerToggle() {
-        console.log('OPEN drawer');
         setDrawerOpen(!drawerOpen);
     }
 
-    // if swiped, hide drawer.
+    // If swiped left, close drawer.
     useEffect(() => {
         if (swipeIndex < 0) {
             setDrawerOpen(false);
@@ -83,7 +97,7 @@ export default function Layout({ children }) {
                             <MenuIcon />
                         </IconButton>
                         <Typography variant="h6" noWrap>
-                            {/*App bar title here*/}
+                            {/* App bar title here */}
                         </Typography>
                         <div style={{flex: 1}} />
                         <img style={{height: "70px", margin: "-10px"}} src={process.env.PUBLIC_URL + "/bipolar record.gif"} alt={"create response"}/>
