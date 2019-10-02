@@ -25,6 +25,11 @@ const useStyles = makeStyles(() => ({
         alignItems: "center",
         justifyContent: "center"
     },
+    link: {
+        textAlign: "left",
+        padding: "0 0 8px 16px",
+        pointerEvents: "all",
+    }
 }));
 
 /**
@@ -41,19 +46,36 @@ export default function Drawer() {
     const resumeIcon = <CardTravelIcon />;
 
     return (
-        <div id={"fuckin drawer"}>
-            <Toolbar>
-                <div className={classes.clockContainer}>
-                    <img className={classes.img} src={process.env.PUBLIC_URL + '/tourists.gif'} alt={"tourists"}/>
-                    <Clock />
+        <div id={"drawer"} style={{pointerEvents: "none"}}>
+            {/* Drawer's main content */}
+            <div id={"drawer-main-content"} style={{display: "inline-block", background: "#fff", pointerEvents: "all"}}>
+                <Toolbar>
+                    <div className={classes.clockContainer}>
+                        <img className={classes.img} src={process.env.PUBLIC_URL + '/tourists.jpg'} alt={"tourists"}/>
+                        <Clock />
+                    </div>
+                </Toolbar>
+                <Divider />
+                <List id={"this"}>
+                    <DrawerItem text={"Home"} url={""} svg={homeIcon} />
+                    <DrawerItem text={"Applications"} url={"/applications/"} svg={appsIcon} />
+                    <DrawerItem text={"Resumé"} url={"/resume/"} svg={resumeIcon} />
+                </List>
+                <Divider />
+            </div>
+
+            {/* Spacer so that the links below can show through this "window" on small screens */}
+            <div style={{height: "72px", background: "rgba(0, 0, 0, 0)"}}/>
+
+            {/* Bottom-fixed link section */}
+            <div style={{position: "fixed", bottom: 0, zIndex: -1, marginBottom: "8px"}}>
+                <div className={classes.link}>
+                    <a href={"https://github.com/alynes"}>github.com/alynes</a>
                 </div>
-            </Toolbar>
-            <Divider />
-            <List>
-                <DrawerItem text={"Home"} url={""} svg={homeIcon} />
-                <DrawerItem text={"Applications"} url={"/applications/"} svg={appsIcon} />
-                <DrawerItem text={"Resumé"} url={"/resume/"} svg={resumeIcon} />
-            </List>
+                <div className={classes.link}>
+                    <a href={"https://linkedin.com/in/alynes"}>linkedin.com/alynes</a>
+                </div>
+            </div>
         </div>
     )
 }

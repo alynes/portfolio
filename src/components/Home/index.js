@@ -35,7 +35,7 @@ export default function Home() {
                 <Carousel3D autoInterval={5}>
                     <img className={"carousel-img"} src={process.env.PUBLIC_URL + '/avesa animated.gif'} alt={"avesa"}/>
                     <img className={"carousel-img"} src={process.env.PUBLIC_URL + '/bp-chronicles-play.gif'} alt={"bp chonicles"}/>
-                    <img className={"carousel-img"} src={process.env.PUBLIC_URL + '/tourists.gif'} alt={"create response"}/>
+                    <img className={"carousel-img"} src={process.env.PUBLIC_URL + '/tourists.jpg'} alt={"create response"}/>
                 </Carousel3D>
             </div>
             <p>

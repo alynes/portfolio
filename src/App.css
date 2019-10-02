@@ -54,3 +54,8 @@ p {
 h1 {
   width: 100%;
 }
+
+a {
+  color: dodgerblue;
+  text-decoration: none;
+}
