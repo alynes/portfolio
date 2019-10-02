@@ -7,12 +7,13 @@ import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
 import HomeIcon from '@material-ui/icons/Home';
 import AppsIcon from '@material-ui/icons/Apps';
+import CardTravelIcon from '@material-ui/icons/CardTravel';
 
 // My Components
 import DrawerItem from './DrawerItem.js';
 import Clock from '../Clock.js';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
     img: {
         width: '100%',
         flex: 1,
@@ -37,6 +38,7 @@ export default function Drawer() {
 
     const homeIcon = <HomeIcon />;
     const appsIcon = <AppsIcon />;
+    const resumeIcon = <CardTravelIcon />;
 
     return (
         <div id={"fuckin drawer"}>
@@ -50,6 +52,7 @@ export default function Drawer() {
             <List>
                 <DrawerItem text={"Home"} url={""} svg={homeIcon} />
                 <DrawerItem text={"Applications"} url={"/applications/"} svg={appsIcon} />
+                <DrawerItem text={"Resumé"} url={"/resume/"} svg={resumeIcon} />
             </List>
         </div>
     )

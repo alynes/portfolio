@@ -9,6 +9,7 @@ import Applications from './components/Applications/index.js';
 import TradeBoy from "./components/Applications/TradeBoy";
 import SocialAutomator from "./components/Applications/SocialAutomator";
 import BPChronicles from "./components/Applications/BPChronicles";
+import Resume from './components/Home/Resume.js';
 
 export default function App() {
     return (
@@ -25,6 +26,11 @@ export default function App() {
                             exact
                             path={"/applications"}
                             render={props => <Applications {...props}/>}
+                        />
+                        <Route
+                            exact
+                            path={"/resume"}
+                            render={props => <Resume {...props}/>}
                         />
                         <Route
                             exact
