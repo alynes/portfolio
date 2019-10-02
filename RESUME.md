@@ -1,14 +1,15 @@
 
 ### Austin Lynes
 Phone: 469-268-2683 <br/>
-E-Mail: austinlynes7@gmail.com
+E-Mail: austinlynes7@gmail.com <br/>
+Linked-In: [linkedin.com/in/austin-lynes...](https://linkedin.com/in/austin-lynes-489771129)
 
-## Objective
+# Objective
 Creative self-motivated software engineer — dedicated to the exploration of what technology can achieve, 
 the discovery of how much efficiency can be improved in any system, and 
 ingenuitive solutions to problems that have yet to be identified — seeking engaging opportunities.
 
-## Skills
+# Skills
 
 - JavaScript | Python | C# | C++
 - React - Redux - Thunk - Webpack
@@ -22,7 +23,7 @@ ingenuitive solutions to problems that have yet to be identified — seeking eng
 - Test-Driven Development
 - AWS - EC2 / RDS
 
-## Experience
+# Experience
 
 #### Bipolar Entertainment : 
 March 2017 - Current
@@ -42,3 +43,11 @@ June 2018 - Current
 
 - Log file parsing and obfuscation using regular expressions.
 
+# Education
+
+#### Tarrant County College :
+2017 - 2019
+
+- Associates of Science in Information Technology: Programming, AAS. (December 2019)
+
+- Certificates 1 & 2 for Programming Field of Study
