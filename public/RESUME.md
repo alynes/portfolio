@@ -6,9 +6,7 @@ Github: [github.com/alynes](https://github.com/alynes) <br/>
 Linked-In: [linkedin.com/alynes](https://linkedin.com/in/alynes)
 
 # Objective
-Polyglot software engineer — dedicated to the exploration of what technology can achieve, 
-the discovery of how much efficiency can be improved in any system, and 
-innovative solutions to problems that have yet to be identified — seeking engaging opportunities.
+Punctual and professional software engineer seeking engaging opportunities.
 
 # Skills
 
@@ -68,3 +66,5 @@ June 2018 - Current
 - Associates of Science in Information Technology: Programming, AAS. (December 2019)
 
 - Certificates 1 & 2 for Programming Field of Study
+
+<br/>

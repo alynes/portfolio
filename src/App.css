@@ -20,6 +20,7 @@
 .App-link {
   color: black;
   text-decoration: none;
+  margin: 10px 0 10px 0;
 }
 
 .App-link:hover {
@@ -29,8 +30,9 @@
 }
 
 .App-img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  max-height: 80vmin;
 }
 
 .App-img-container {

@@ -52,24 +52,28 @@ export default function Carousel3D({ children, initialIndex=0, autoInterval=0, a
 
     return (
         <Swipe threshold={30} x={index} setX={setIndex} setDirection={setDirection}>
-            <TransitionGroup
-                // This ensures that the next element receives the correct transition class BEFORE the transition
-                childFactory={element => React.cloneElement(
-                    element,
-                    {classNames: transitionClass, timeout: 600},
-                )}
-                component={null}
-            >
-                <CSSTransition
-                    key={index}
-                    timeout={600}
-                    classNames={transitionClass}
+            <div style={{display: "block", width: "100%", height: "200px"}}>
+                <div style={{position: "absolute", width: "100%", height: "100%", minHeight: "auto"}}>
+                <TransitionGroup
+                    // This ensures that the next element receives the correct transition class BEFORE the transition
+                    childFactory={element => React.cloneElement(
+                        element,
+                        {classNames: transitionClass, timeout: 600},
+                    )}
+                    component={null}
                 >
-                    <div className={"slide"} style={{position: "absolute", top: 0, left: 0, right: 0, bottom: 0, padding: "auto"}}>
-                        {children[Math.abs(index) % children.length]}
-                    </div>
-                </CSSTransition>
-            </TransitionGroup>
+                    <CSSTransition
+                        key={index}
+                        timeout={600}
+                        classNames={transitionClass}
+                    >
+                        <div className={"slide"} style={{position: "absolute", top: 0, left: 0, right: 0, bottom: 0, margin: "auto"}}>
+                            {children[Math.abs(index) % children.length]}
+                        </div>
+                    </CSSTransition>
+                </TransitionGroup>
+                </div>
+            </div>
         </Swipe>
     )
 }

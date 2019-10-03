@@ -13,15 +13,35 @@ export default function TradeBoy() {
                 let you spend what you WILL have in the future when your open trades close. So my solution to this was to create an application that allows you to make
                 "sequential" trades.
             </p>
+            <p>
+                I used the Binance REST API to make queries on the pricing data as well as to make trades directly and automatically on this platform.
+            </p>
             <div className={"App-img-container"}>
-                <img className={"App-img"} src={process.env.PUBLIC_URL + "/tradeboy-trade.gif"} alt={"trading"}/>
+                <video autoPlay muted loop className={"App-img"} src={process.env.PUBLIC_URL + "/tb-login.mp4"} />
             </div>
             <p>
-                For this, I used the Binance REST API to make queries on the pricing data as well as to make trades directly and automatically on this platform.
+                The calculations are done in the front end each time something changes, and then the math is double checked and
+                validation is applied by the server.
             </p>
+            <div className={"App-img-container"}>
+                <video autoPlay muted loop className={"App-img"} src={process.env.PUBLIC_URL + "/tb-price.mp4"} />
+            </div>
+            <p>
+                These buy/sell modifiers make it easy to make many trades quickly.
+            </p>
+            <div className={"App-img-container"}>
+                <video autoPlay muted loop className={"App-img"} src={process.env.PUBLIC_URL + "/tb-buysell.mp4"} />
+            </div>
+            <p>
+                In-progress orders may be deleted or cancelled if already sent to the Binance exchange.
+            </p>
+            <div className={"App-img-container"}>
+                <video autoPlay muted loop className={"App-img"} src={process.env.PUBLIC_URL + "/tb-delete-cancel.mp4"} />
+            </div>
             <p>
                 Now this friend of mine uses it every day. I set up an AWS EC2 instance to host the app.
             </p>
+            <br/>
         </div>
     )
 }
