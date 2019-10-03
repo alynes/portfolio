@@ -100,7 +100,10 @@ export default function Layout({ children, location }) {
                             {/* App bar title here */}
                         </Typography>
                         <div style={{flex: 1}} />
-                        <img style={{height: "70px", margin: "-10px"}} src={process.env.PUBLIC_URL + "/bipolar record.gif"} alt={"create response"}/>
+                        <div style={{height: "100%"}}>
+                            <img style={{maxHeight: "42px", margin: "auto"}} src={process.env.PUBLIC_URL + "/avesa animated.gif"} alt={"create response"}/>
+                        </div>
+
                     </Toolbar>
                 </AppBar>
                 <nav className={classes.drawer} aria-label="menu items">
