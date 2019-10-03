@@ -5,9 +5,8 @@ import { makeStyles } from "@material-ui/core";
 import Divider from '@material-ui/core/Divider';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
-import HomeIcon from '@material-ui/icons/Home';
-import AppsIcon from '@material-ui/icons/Apps';
-import CardTravelIcon from '@material-ui/icons/CardTravel';
+import RecentActorsIcon from '@material-ui/icons/RecentActors';
+import PermMediaIcon from '@material-ui/icons/PermMedia';
 
 // My Components
 import DrawerItem from './DrawerItem.js';
@@ -41,9 +40,8 @@ const useStyles = makeStyles(() => ({
 export default function Drawer() {
     const classes = useStyles();
 
-    const homeIcon = <HomeIcon />;
-    const appsIcon = <AppsIcon />;
-    const resumeIcon = <CardTravelIcon />;
+    const homeIcon = <PermMediaIcon />;
+    const resumeIcon = <RecentActorsIcon />;
 
     return (
         <div id={"drawer"} style={{pointerEvents: "none"}}>
@@ -57,8 +55,7 @@ export default function Drawer() {
                 </Toolbar>
                 <Divider />
                 <List id={"this"}>
-                    <DrawerItem text={"Home"} url={""} svg={homeIcon} />
-                    <DrawerItem text={"Applications"} url={"/applications/"} svg={appsIcon} />
+                    <DrawerItem text={"Portfolio"} url={""} svg={homeIcon} />
                     <DrawerItem text={"Resumé"} url={"/resume/"} svg={resumeIcon} />
                 </List>
                 <Divider />

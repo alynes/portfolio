@@ -23,9 +23,9 @@ const useStyles = makeStyles(() => ({
 }));
 
 /**
- * This is the Home page
+ * This is the Portfolio page
  */
-export default function Home() {
+export default function Portfolio() {
     const classes = useStyles();
 
     return (

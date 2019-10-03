@@ -4,12 +4,12 @@ import './App.css';
 
 // My Components
 import Layout from './components/Layout/index.js';
-import Home from './components/Home/index.js';
+import Portfolio from './components/Portfolio/index.js';
 import Applications from './components/Applications/index.js';
 import TradeBoy from "./components/Applications/TradeBoy";
 import SocialAutomator from "./components/Applications/SocialAutomator";
 import BPChronicles from "./components/Applications/BPChronicles";
-import Resume from './components/Home/Resume.js';
+import Resume from './components/Portfolio/Resume.js';
 
 export default function App() {
     return (
@@ -20,7 +20,7 @@ export default function App() {
                         <Route
                             exact
                             path={"/"}
-                            render={props => <Home {...props}/>}
+                            render={props => <Portfolio {...props}/>}
                         />
                         <Route
                             exact
