@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lynes-portfolio/precache-manifest.33c68cebfc6e7b479b68643b41b3f991.js"
+  "/lynes-portfolio/precache-manifest.bf1ca745d979ef2568e886091bf5d40d.js"
 );
 
 self.addEventListener('message', (event) => {
