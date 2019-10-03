@@ -20,7 +20,7 @@ import React, { useState, useEffect, Fragment } from 'react';
  *
  *   IN THIS APP:
  *   - Closing the Drawer: Layout
- *   - Navigating Carousel3D: Home
+ *   - Navigating Carousel3D: Portfolio
  */
 export default function Swipe({ children, threshold, x=null, setX=null, y=null, setY=null, setDirection=null, revX=false, revY=false }) {
     const [calculating, setCalculating] = useState(0);  // Calculate differences in 'x' and 'y' swipe coordinates while true.

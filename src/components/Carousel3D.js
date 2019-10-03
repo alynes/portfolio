@@ -15,7 +15,7 @@ import Swipe from './Swipe.js';
  *  @param { string } autoDirection - Auto-swipe to the 'autoDirection' ("left" | "right")
  *
  *   IN THIS APP:
- *   - Home
+ *   - Portfolio
  */
 export default function Carousel3D({ children, initialIndex=0, autoInterval=0, autoDirection='left' }) {
     const [index, setIndex] = useState(initialIndex);  // The carousel will display the 'index' positioned child element.

@@ -6,10 +6,10 @@ export default function Resume() {
     const resume = loadFile(path);
     return (
         <div className={"App-page"}>
-        <Markdown
-            escapeHtml={false}
-            source={resume}
-        />
+            <Markdown
+                escapeHtml={false}
+                source={resume}
+            />
         </div>
     )
 }

@@ -4,12 +4,11 @@ import './App.css';
 
 // My Components
 import Layout from './components/Layout/index.js';
-import Home from './components/Home/index.js';
-import Applications from './components/Applications/index.js';
-import TradeBoy from "./components/Applications/TradeBoy";
-import SocialAutomator from "./components/Applications/SocialAutomator";
-import BPChronicles from "./components/Applications/BPChronicles";
-import Resume from './components/Home/Resume.js';
+import Portfolio from './components/Portfolio/index.js';
+import TradeBoy from "./components/Portfolio/TradeBoy";
+import SocialAutomator from "./components/Portfolio/SocialAutomator";
+import BPChronicles from "./components/Portfolio/BPChronicles";
+import Resume from './components/Resume.js';
 
 export default function App() {
     return (
@@ -20,12 +19,12 @@ export default function App() {
                         <Route
                             exact
                             path={"/"}
-                            render={props => <Home {...props}/>}
+                            render={props => <Portfolio {...props}/>}
                         />
                         <Route
                             exact
-                            path={"/applications"}
-                            render={props => <Applications {...props}/>}
+                            path={"/portfolio"}
+                            render={props => <Portfolio {...props}/>}
                         />
                         <Route
                             exact
@@ -34,15 +33,15 @@ export default function App() {
                         />
                         <Route
                             exact
-                            path={`/applications/trade-boy`}
+                            path={`/portfolio/trade-boy`}
                             component={TradeBoy}/>
                         <Route
                             exact
-                            path={`/applications/social-automator`}
+                            path={`/portfolio/social-automator`}
                             component={SocialAutomator}/>
                         <Route
                             exact
-                            path={`/applications/bp-chronicles`}
+                            path={`/portfolio/bp-chronicles`}
                             component={BPChronicles}/>
                     </Layout>
                 </Switch>
