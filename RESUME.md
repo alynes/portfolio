@@ -41,15 +41,15 @@ March 2016 - Current
 
 - Design and implementation of an interactive musical RPG and level builder. 
 Access’s database with data for the map through Django Rest Framework custom API.
-[See Portfolio](/#/portfolio/bp-chronicles)
+[See Portfolio](https://alynes.github.io/lynes-portfolio/#/portfolio/bp-chronicles/)
 
 - Designed, implemented, and deployed a web app on AWS; utilizing 3rd party REST API’s from 
 various cryptocurrency exchanges to execute day-trading strategies not offered by traditional exchange platforms.
-[See Portfolio](/#/portfolio/trade-boy)
+[See Portfolio](https://alynes.github.io/lynes-portfolio/#/portfolio/trade-boy)
 
 - Designed and developed a social media automation and growth-hacking web app with Django. 
 Multi-site posting with various REST API’s, 3rd party libraries, complete with OAuth2 authentication.
-[See Portfolio](/#/portfolio/social-automator)
+[See Portfolio](https://alynes.github.io/lynes-portfolio/#/portfolio/social-automator)
 
 #### Verity Instruments
 June 2018 - Current
