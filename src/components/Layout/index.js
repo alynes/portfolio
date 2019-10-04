@@ -61,6 +61,9 @@ export default function Layout({ children, location }) {
         if (swipeIndex < 0) {
             setDrawerOpen(false);
             setSwipeIndex(0);
+        } else if (swipeIndex > 0) {
+            setDrawerOpen(true);
+            setSwipeIndex(0);
         } else {
             setSwipeIndex(0);
         }
@@ -86,7 +89,8 @@ export default function Layout({ children, location }) {
     return(
         <div>
             <div>
-                <AppBar position="fixed" style={{display: "block"}}>
+                <Swipe x={swipeIndex} setX={setSwipeIndex} threshold={30} >
+                    <AppBar position="fixed" style={{display: "block"}}>
                     <Toolbar>
                         <IconButton
                             color="inherit"
@@ -105,7 +109,8 @@ export default function Layout({ children, location }) {
                         </div>
 
                     </Toolbar>
-                </AppBar>
+                    </AppBar>
+                </Swipe>
                 <nav className={classes.drawer} aria-label="menu items">
                     <Swipe x={swipeIndex} setX={setSwipeIndex} threshold={30} >
                         {drawer}
