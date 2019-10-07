@@ -1,18 +1,19 @@
 
 ### Austin Lynes
-Phone: 469-268-2683 <br/>
-E-Mail: austinlynes7@gmail.com <br/>
-Github: [github.com/alynes](https://github.com/alynes) <br/>
-Linked-In: [linkedin.com/alynes](https://linkedin.com/in/alynes)
+469-268-2683 <br/>
+aus10lynes@gmail.com <br/>
+[github.com/alynes](https://github.com/alynes) <br/>
+[linkedin.com/alynes](https://linkedin.com/in/alynes)
 
 # Objective
-Punctual and professional software engineer seeking engaging opportunities.
+
+Punctual and professional software engineer – passionate about developing creative solutions for all areas in life – seeking engaging opportunities.
 
 # Skills
 
 - JavaScript | Python | C# | C++
 
-- React - Redux - Thunk - Webpack
+- React - Redux - Axios - Webpack
 
 - Django Rest Framework
 
@@ -24,32 +25,30 @@ Punctual and professional software engineer seeking engaging opportunities.
 
 - .NET core - Entity Framework
 
-- Regular Expressions
-
 - Agile | D.R.Y. | S.O.L.I.D.
 
 - Test-Driven Development
 
-- AWS - EC2 / RDS
 
 # Experience
 
-#### Bipolar Entertainment
-March 2016 - Current
+#### Full Stack Engineer at Bipolar.IO
 
-- Design and implementation of an interactive musical RPG and level builder. 
-Access’s database with data for the map through Django Rest Framework custom API.
-[See Portfolio](https://alynes.github.io/lynes-portfolio/#/portfolio/bp-chronicles/)
+April 2016 - Current
 
-- Designed, implemented, and deployed a web app on AWS; utilizing 3rd party REST API’s from 
-various cryptocurrency exchanges to execute day-trading strategies not offered by traditional exchange platforms.
-[See Portfolio](https://alynes.github.io/lynes-portfolio/#/portfolio/trade-boy)
+- Design and development of an interactive musical experience. 
+This React-powered app access's data through a custom Django Rest Framework API.
+[See Portfolio](https://alynes.github.io/portfolio/#/portfolio/bp-chronicles/)
 
-- Designed and developed a social media automation and growth-hacking web app with Django. 
-Multi-site posting with various REST API’s, 3rd party libraries, complete with OAuth2 authentication.
-[See Portfolio](https://alynes.github.io/lynes-portfolio/#/portfolio/social-automator)
+- Implementation and deployment of a cryptocurrency day-trading app on AWS; utilizing React and 3rd party REST API’s from 
+various currency exchanges to execute strategies not offered by traditional platforms.
+[See Portfolio](https://alynes.github.io/portfolio/#/portfolio/trade-boy)
 
-#### Verity Instruments
+- Design and development for a social media automation and growth-hacking app with Django: 
+Multi-site posting with various API’s, 3rd party libraries, complete with OAuth2 authentication.
+[See Portfolio](https://alynes.github.io/portfolio/#/portfolio/social-automator)
+
+#### Associate Developer at Verity Inst.
 June 2018 - Current
 
 - AGILE development and testing of C# and C++ desktop utilities. .NET Framework, MFC, Windows Forms.
@@ -66,5 +65,7 @@ June 2018 - Current
 - Associates of Science in Information Technology: Programming, AAS. (December 2019)
 
 - Certificates 1 & 2 for Programming Field of Study
+
+- Dean's List and National Honor Society
 
 <br/>
