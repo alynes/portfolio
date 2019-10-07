@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/lynes-portfolio/static/css/main.4c676bd0.chunk.css",
-    "main.js": "/lynes-portfolio/static/js/main.b1820d7b.chunk.js",
-    "main.js.map": "/lynes-portfolio/static/js/main.b1820d7b.chunk.js.map",
-    "runtime-main.js": "/lynes-portfolio/static/js/runtime-main.da16220b.js",
-    "runtime-main.js.map": "/lynes-portfolio/static/js/runtime-main.da16220b.js.map",
-    "static/js/2.2dd4e2f5.chunk.js": "/lynes-portfolio/static/js/2.2dd4e2f5.chunk.js",
-    "static/js/2.2dd4e2f5.chunk.js.map": "/lynes-portfolio/static/js/2.2dd4e2f5.chunk.js.map",
-    "index.html": "/lynes-portfolio/index.html",
-    "precache-manifest.7eb6342e931c7cc38b1a0cd611347820.js": "/lynes-portfolio/precache-manifest.7eb6342e931c7cc38b1a0cd611347820.js",
-    "service-worker.js": "/lynes-portfolio/service-worker.js",
-    "static/css/main.4c676bd0.chunk.css.map": "/lynes-portfolio/static/css/main.4c676bd0.chunk.css.map"
+    "main.css": "/personal-portfolio/static/css/main.4c676bd0.chunk.css",
+    "main.js": "/personal-portfolio/static/js/main.4655a349.chunk.js",
+    "main.js.map": "/personal-portfolio/static/js/main.4655a349.chunk.js.map",
+    "runtime-main.js": "/personal-portfolio/static/js/runtime-main.5450d794.js",
+    "runtime-main.js.map": "/personal-portfolio/static/js/runtime-main.5450d794.js.map",
+    "static/js/2.42a81720.chunk.js": "/personal-portfolio/static/js/2.42a81720.chunk.js",
+    "static/js/2.42a81720.chunk.js.map": "/personal-portfolio/static/js/2.42a81720.chunk.js.map",
+    "index.html": "/personal-portfolio/index.html",
+    "precache-manifest.62709729d1593f85d8d7e707ba211096.js": "/personal-portfolio/precache-manifest.62709729d1593f85d8d7e707ba211096.js",
+    "service-worker.js": "/personal-portfolio/service-worker.js",
+    "static/css/main.4c676bd0.chunk.css.map": "/personal-portfolio/static/css/main.4c676bd0.chunk.css.map"
   }
 }
