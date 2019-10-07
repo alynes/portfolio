@@ -23,25 +23,20 @@ export default function App() {
                         />
                         <Route
                             exact
-                            path={"/portfolio"}
-                            render={props => <Portfolio {...props}/>}
-                        />
-                        <Route
-                            exact
                             path={"/resume"}
                             render={props => <Resume {...props}/>}
                         />
                         <Route
                             exact
-                            path={`/portfolio/trade-boy`}
+                            path={`/trade-boy`}
                             component={TradeBoy}/>
                         <Route
                             exact
-                            path={`/portfolio/social-automator`}
+                            path={`/social-automator`}
                             component={SocialAutomator}/>
                         <Route
                             exact
-                            path={`/portfolio/bp-chronicles`}
+                            path={`/bp-chronicles`}
                             component={BPChronicles}/>
                     </Layout>
                 </Switch>

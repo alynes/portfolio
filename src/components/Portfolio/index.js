@@ -90,7 +90,7 @@ export default function Portfolio() {
                 <div className={classes.grid}>
                     {applications.map((app) => (
                         <div key={app.id} className={classes.gridItemContainer}>
-                            <Link to={`/portfolio/${app.id}`} style={{display: "flex", flexDirection: "column"}}>
+                            <Link to={`/${app.id}`} style={{display: "flex", flexDirection: "column"}}>
                                 <h1 style={{textAlign: "center"}} className={"App-link"}>{app.name}</h1>
                                 <p style={{textAlign: "center"}} className={"App-link"}>{app.description}</p>
                                 <div className={classes.carouselContainer}>

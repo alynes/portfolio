@@ -1,9 +1,9 @@
 
 ### Austin Lynes
-469-268-2683 <br/>
-aus10lynes@gmail.com <br/>
-[github.com/alynes](https://github.com/alynes) <br/>
-[linkedin.com/alynes](https://linkedin.com/in/alynes)
+469-268-2683<br/>
+aus10lynes@gmail.com<br/>
+[github.com/alynes](https://github.com/alynes)<br/>
+[linkedin.com/alynes](https://linkedin.com/in/alynes)<br/>
 
 # Objective
 
@@ -13,7 +13,7 @@ Punctual and professional software engineer – passionate about developing crea
 
 - JavaScript | Python | C# | C++
 
-- React - Redux - Axios - Webpack
+- React – Redux - Axios - Webpack
 
 - Django Rest Framework
 
@@ -38,15 +38,15 @@ April 2016 - Current
 
 - Design and development of an interactive musical experience. 
 This React-powered app access's data through a custom Django Rest Framework API.
-[See Portfolio](https://alynes.github.io/portfolio/#/portfolio/bp-chronicles/)
+[See Portfolio](https://alynes.github.io/portfolio/#/bp-chronicles)
 
 - Implementation and deployment of a cryptocurrency day-trading app on AWS; utilizing React and 3rd party REST API’s from 
-various currency exchanges to execute strategies not offered by traditional platforms.
-[See Portfolio](https://alynes.github.io/portfolio/#/portfolio/trade-boy)
+various currency exchanges to execute trade strategies not offered by traditional platforms.
+[See Portfolio](https://alynes.github.io/portfolio/#/trade-boy)
 
 - Design and development for a social media automation and growth-hacking app with Django: 
 Multi-site posting with various API’s, 3rd party libraries, complete with OAuth2 authentication.
-[See Portfolio](https://alynes.github.io/portfolio/#/portfolio/social-automator)
+[See Portfolio](https://alynes.github.io/portfolio/#/social-automator)
 
 #### Associate Developer at Verity Inst.
 June 2018 - Current
@@ -67,5 +67,3 @@ June 2018 - Current
 - Certificates 1 & 2 for Programming Field of Study
 
 - Dean's List and National Honor Society
-
-<br/>
