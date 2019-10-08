@@ -1,11 +1,10 @@
 # Austin's Portfolio
 
 This portfolio is a React app written entirely with functional components. 
-You will not find one class-based component here, and 3rd party ingredients are kept to a bare minimum.
+You will not find one class-based component here, and 3rd party ingredients are kept to a minimum.
 
 The two most interesting components are Swipe and Carousel3D.
 <br/>
-
 
 Swipe:
 >Makes child elements swipe-able. You can utilize React.useEffect() in another component
@@ -13,6 +12,9 @@ to do anything based on 'x' and/or 'y' increasing or decreasing by 1.
 
 Carousel3D:
 >Places child elements into a rotating carousel that uses Swipe and smooth CSS transitions.
+
+
+Feel free to use these however you like! I would love to see your creations/improvements.
 
 ## Available Scripts
 
@@ -43,33 +45,3 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### `yarn deploy`
 
 Bundles app and deploys to Github Pages.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
