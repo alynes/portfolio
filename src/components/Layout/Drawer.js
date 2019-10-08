@@ -49,7 +49,7 @@ export default function Drawer() {
             <div id={"drawer-main-content"} style={{display: "inline-block", background: "#fff", pointerEvents: "all"}}>
                 <Toolbar>
                     <div className={classes.clockContainer}>
-                        <img className={classes.img} src={process.env.PUBLIC_URL + '/tourists.jpg'} alt={"tourists"}/>
+                        <img className={classes.img} src={process.env.PUBLIC_URL + "/astronaut-flip.gif"} alt={"astronaut-flip"}/>
                         <Clock />
                     </div>
                 </Toolbar>

@@ -27,7 +27,7 @@ const applications = [
         name: 'Social Automator',
         description: 'Social media automation',
         id: 'social-automator',
-        src: ['/sa-response-edit.mp4', '/sa-who-r-u.mp4', '/sa-not-found.mp4'],
+        src: ['/sa-schedule.mp4', '/sa-who-r-u.mp4', '/sa-task-create.mp4'],
         alt: 'Social media automation application'
     }
 ];
@@ -38,7 +38,6 @@ const useStyles = makeStyles(theme => ({
         display: 'grid',
         justifyItems: 'center',
         alignItems: 'start',
-        maxWidth: '1200px',
 
         [theme.breakpoints.up('xs')]: {
             gridTemplateColumns: '1fr',
@@ -85,7 +84,7 @@ export default function Portfolio() {
     const classes = useStyles();
 
     return (
-        <div className={"App-page"}>
+        <div className={"App-page"} style={{maxWidth: "80vw", margin: "auto"}}>
             <div>
                 <div className={classes.grid}>
                     {applications.map((app) => (

@@ -10,17 +10,18 @@ export default function Resume() {
                 escapeHtml={false}
                 source={resume}
             />
+            <br/><br/>
         </div>
     )
 }
 
 function loadFile(filePath) {
-    var result = null;
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", filePath, false);
-    xmlhttp.send();
-    if (Number(xmlhttp.status) === 200) {
-        result = xmlhttp.responseText;
+    let result = null;
+    let xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", filePath, false);
+    xmlHttp.send();
+    if (Number(xmlHttp.status) === 200) {
+        result = xmlHttp.responseText;
     }
     return result;
 }

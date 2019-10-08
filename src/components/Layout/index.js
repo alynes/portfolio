@@ -104,9 +104,9 @@ export default function Layout({ children, location }) {
                             {/* App bar title here */}
                         </Typography>
                         <div style={{flex: 1}} />
-                        <div style={{height: "100%"}}>
-                            <img style={{maxHeight: "42px", margin: "auto"}} src={process.env.PUBLIC_URL + "/avesa animated.gif"} alt={"create response"}/>
-                        </div>
+                        <a href={"https://github.com/alynes/portfolio/"} style={{display: 'inline-block', height: '32px'}}>
+                            <img style={{height: "100%", margin: "auto"}} src={process.env.PUBLIC_URL + "/github-mark.png"} alt={"create response"}/>
+                        </a>
 
                     </Toolbar>
                     </AppBar>
@@ -118,7 +118,7 @@ export default function Layout({ children, location }) {
                 </nav>
             </div>
             <div id={"content-area"}>
-                <Toolbar />
+                <br /><br />
                 {children}
             </div>
         </div>

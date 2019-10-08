@@ -6,11 +6,10 @@ export default function TradeBoy() {
         <div className={"App-page"}>
             <h1>TradeBoy</h1>
             <p>
-                It was a friend of mine that came up with the idea for this application.
-                He is a cryptocurrency day-trader, and was feeling fatigued by the constant need to be at his computer, ready to make a trade.
+                My client is a cryptocurrency day-trader, and was feeling fatigued by the constant need to be at his computer, ready to make a trade.
                 He is a self-described "scalper", and uses large percentages of his funds to make profits off of very small price differences.
                 The issue with that is that most exchanges, of course, only let you spend the money that you have. They don't have the ability to
-                let you spend what you WILL have in the future when your open trades close. So my solution to this was to create an application that allows you to make
+                let you spend what you WILL have in the future. My solution to this was to create an application that allows you to make
                 "sequential" trades.
             </p>
             <p>
@@ -34,13 +33,11 @@ export default function TradeBoy() {
             </div>
             <p>
                 In-progress orders may be deleted or cancelled if already sent to the Binance exchange.
+                I set up an AWS EC2 instance to host the app, and he uses it every day.
             </p>
             <div className={"App-img-container"}>
                 <video autoPlay muted loop className={"App-img"} src={process.env.PUBLIC_URL + "/tb-delete-cancel.mp4"} />
             </div>
-            <p>
-                Now this friend of mine uses it every day. I set up an AWS EC2 instance to host the app.
-            </p>
             <br/>
         </div>
     )

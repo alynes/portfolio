@@ -15,6 +15,11 @@ export default function App() {
         <div className="App">
             <Router>
                 <Switch>
+                    <Route
+                        exact
+                        path={"/resume/print"}
+                        render={props => <Resume {...props}/>}
+                    />
                     <Layout>
                         <Route
                             exact

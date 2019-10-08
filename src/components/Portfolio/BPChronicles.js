@@ -15,7 +15,7 @@ export default function BPChronicles() {
             <div className={"App-img-container"}>
                 <video autoPlay muted loop className={"App-img"} src={process.env.PUBLIC_URL + "/bc-all-directions.mp4"} />
             </div>
-            <p>They music player changes the level.</p>
+            <p>The music player changes the level.</p>
             <div className={"App-img-container"}>
                 <video autoPlay muted loop className={"App-img"} src={process.env.PUBLIC_URL + "/bc-music-player.mp4"} />
             </div>

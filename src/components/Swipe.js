@@ -79,7 +79,7 @@ export default function Swipe({ children, threshold, x=null, setX=null, y=null, 
 
     return (
         <Fragment>
-            <div style={{display: "inline-block"}}
+            <div style={{display: "inline-block", touchAction: "none"}}
                 // Touch
                 onTouchStart={(e) => {
                     e.preventDefault();
