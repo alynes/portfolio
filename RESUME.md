@@ -1,9 +1,11 @@
 
-<h4 style="margin: 0"> Austin Lynes </h4>
-
+<h4 style="margin-block-end: 0"> Austin Lynes </h4>
+<p style="margin-block-start: 0">
 469-268-2683<br/>
 aus10lynes@gmail.com<br/>
-[linkedin.com/alynes](https://linkedin.com/in/alynes)<br/>
+<a href="https://linkedin.com/in/alynes">linkedin.com/alynes</a><br/>
+</p>
+
 
 <div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
 <h1 style="float: left; width: auto; margin: 0">Objective</h1>
