@@ -1,55 +1,51 @@
 
-### Austin Lynes
+#### Austin Lynes
 469-268-2683<br/>
 aus10lynes@gmail.com<br/>
-[github.com/alynes](https://github.com/alynes)<br/>
 [linkedin.com/alynes](https://linkedin.com/in/alynes)<br/>
 
-# Objective
+<div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
+<h1 style="float: left; width: auto; margin: 0">Objective</h1>
+</div>
 
-Punctual and professional software engineer – passionate about developing creative solutions for all areas in life – seeking engaging opportunities.
+<hr style="height: 1px; background-color: black;"/>
 
-# Skills
+Punctual and professional problem solver seeking engaging opportunities.
 
-- JavaScript | Python | C# | C++
+<div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
+<h1 style="float: left; width: auto; margin: 0">Experience</h1>
+<a href="https://alynes.github.io/portfolio/" style="float: left">[Portfolio]</a>
+</div>
 
-- React – Redux - Axios - Webpack
+<hr style="height: 1px; background-color: black;"/>
 
-- Django Rest Framework
-
-- Git / Subversion
-
-- Bootstrap / Material Design 
-
-- React-Transition-Group
-
-- .NET core - Entity Framework
-
-- Agile | D.R.Y. | S.O.L.I.D.
-
-- Test-Driven Development
-
-
-# Experience
-
-#### Full Stack Engineer at Bipolar.IO
+#### Full Stack Engineer at Bipolar.IO 
 
 April 2016 - Current
 
-- Design and development of an interactive musical experience. 
-This React-powered app access's data through a custom Django Rest Framework API.
-[See Portfolio](https://alynes.github.io/portfolio/#/bp-chronicles)
+- Frontend design and development primarily using React functional components and lifecycle hooks
+— compliant with ECMAscript 2015+ specs.
 
-- Implementation and deployment of a cryptocurrency day-trading app on AWS; utilizing React and 3rd party REST API’s from 
-various currency exchanges to execute trade strategies not offered by traditional platforms.
-[See Portfolio](https://alynes.github.io/portfolio/#/trade-boy)
+- Asynchronous requests and rendering with Redux, Axios, and Thunk.
 
-- Design and development for a social media automation and growth-hacking app with Django: 
-Multi-site posting with various API’s, 3rd party libraries, complete with OAuth2 authentication.
-[See Portfolio](https://alynes.github.io/portfolio/#/social-automator)
+- Styling to spec with Material Design and Bootstrap. 
+Implementing animations/transitions using CSS keyframes and React-Transition-Group.
+
+- Writing unit tests for components with Jest, and end-to-end regression tests in Selenium Webdriver (Python).
+
+- Backend design and development in Django Rest Framework ORM and custom mix-in's, as well as .NET core with Entity Framework. 
+
+- Issue tracking and AGILE storyboarding with YouTrack integrated into Jetbrains IDE's
+
+- GIT repository management and maintenance.
+
 
 #### Associate Developer at Verity Inst.
 June 2018 - Current
+
+- Project design and feature development with Agile methodology (Scrum).
+
+- Translating customer requests to technical requirements.
 
 - AGILE development and testing of C# and C++ desktop utilities. .NET Framework, MFC, Windows Forms.
 
@@ -57,7 +53,18 @@ June 2018 - Current
 
 - Log file parsing and obfuscation using regular expressions.
 
-# Education
+- Working with QA to address defects, and SCR's
+
+- Source control with SVN
+
+- Test-Driven-Development in C# with MSTest, and Python with NUnit and UnitTest.
+
+<div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
+<h1 style="float: left; width: auto; margin: 0">Education</h1>
+</div>
+
+<hr style="height: 1px; background-color: black;"/>
+
 
 #### Tarrant County College
 2017 - 2019
@@ -66,4 +73,10 @@ June 2018 - Current
 
 - Certificates 1 & 2 for Programming Field of Study
 
-- Dean's List and National Honor Society
+- Dean's List and National Honor Society nominated
+
+- D.R.Y. and  S.O.L.I.D. programming paradigms in C#, C++, and Java
+
+- Relational Database Programming, SQL
+
+- Linux server administration
