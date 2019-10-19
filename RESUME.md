@@ -77,6 +77,6 @@ June 2018 - Current
 
 - D.R.Y. and  S.O.L.I.D. programming paradigms in C#, C++, and Java
 
-- Relational Database Programming, SQL
+- Relational database programming, SQL
 
 - Linux server administration
