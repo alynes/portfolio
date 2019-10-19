@@ -3,9 +3,9 @@
 <p style="margin-block-start: 0">
 469-268-2683<br/>
 aus10lynes@gmail.com<br/>
+<a href="https://github.com/alynes">github.com/alynes</a><br/>
 <a href="https://linkedin.com/in/alynes">linkedin.com/alynes</a><br/>
 </p>
-
 
 <div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
 <h1 style="float: left; width: auto; margin: 0">Objective</h1>
@@ -38,10 +38,9 @@ Implementing animations/transitions using CSS keyframes and React-Transition-Gro
 
 - Backend design and development in Django Rest Framework ORM and custom mix-in's, as well as .NET core with Entity Framework. 
 
-- Issue tracking and AGILE storyboarding with YouTrack integrated into Jetbrains IDE's
+- Issue tracking and AGILE storyboarding (Kanban) with YouTrack integrated into Jetbrains IDE.
 
 - GIT repository management and maintenance.
-
 
 #### Associate Developer at Verity Inst.
 June 2018 - Current
@@ -81,4 +80,5 @@ June 2018 - Current
 
 - Relational database programming, SQL
 
-- Linux server administration
+- Graphic/Logo design in Adobe Illustrator and Photoshop.
+
