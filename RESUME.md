@@ -1,5 +1,6 @@
 
-#### Austin Lynes
+<h4 style="margin: 0"> Austin Lynes </h4>
+
 469-268-2683<br/>
 aus10lynes@gmail.com<br/>
 [linkedin.com/alynes](https://linkedin.com/in/alynes)<br/>
@@ -8,7 +9,7 @@ aus10lynes@gmail.com<br/>
 <h1 style="float: left; width: auto; margin: 0">Objective</h1>
 </div>
 
-<hr style="height: 1px; background-color: black;"/>
+<hr style="height: 2px; background-color: black; border: none;"/>
 
 Punctual and professional problem solver seeking engaging opportunities.
 
@@ -17,7 +18,7 @@ Punctual and professional problem solver seeking engaging opportunities.
 <a href="https://alynes.github.io/portfolio/" style="float: left">[Portfolio]</a>
 </div>
 
-<hr style="height: 1px; background-color: black;"/>
+<hr style="height: 2px; background-color: black; border: none;"/>
 
 #### Full Stack Engineer at Bipolar.IO 
 
@@ -43,19 +44,18 @@ Implementing animations/transitions using CSS keyframes and React-Transition-Gro
 #### Associate Developer at Verity Inst.
 June 2018 - Current
 
-- Project design and feature development with Agile methodology (Scrum).
+- Project design, feature development, and testing of C#, C++, and Python applications. 
+.NET Framework, MFC, Windows Forms with Agile methodology (Scrum).
 
 - Translating customer requests to technical requirements.
-
-- AGILE development and testing of C# and C++ desktop utilities. .NET Framework, MFC, Windows Forms.
 
 - Custom SWIG interface file creation and maintenance for automated C++ .dll wrapping for C# and Python.
 
 - Log file parsing and obfuscation using regular expressions.
 
-- Working with QA to address defects, and SCR's
+- Working with QA to address defects, and SCR's.
 
-- Source control with SVN
+- Source control with SVN.
 
 - Test-Driven-Development in C# with MSTest, and Python with NUnit and UnitTest.
 
@@ -63,7 +63,7 @@ June 2018 - Current
 <h1 style="float: left; width: auto; margin: 0">Education</h1>
 </div>
 
-<hr style="height: 1px; background-color: black;"/>
+<hr style="height: 2px; background-color: black; border: none;"/>
 
 
 #### Tarrant County College
