@@ -26,39 +26,30 @@ Punctual and professional problem solver seeking engaging opportunities.
 
 April 2016 - Current
 
-- Frontend design and development primarily using React functional components and lifecycle hooks
-— compliant with ECMAscript 2015+ specs.
+- Frontend design and development primarily using React — Kanban storyboarding and issue tracking with YouTrack.
 
-- Asynchronous requests and rendering with Redux, Axios, and Thunk.
+- Asynchronous requests leveraging Redux, Axios, and Thunk. 
+Reactively rendering functional components using effect and state hooks.
 
-- Styling to spec with Material Design and Bootstrap. 
-Implementing animations/transitions using CSS keyframes and React-Transition-Group.
+- Implementing custom transitions and animations with CSS keyframes and React-Transition-Group; 
+styling to spec or utilizing Material-UI | Bootstrap. 
 
-- Writing unit tests for components with Jest, and end-to-end regression tests in Selenium Webdriver (Python).
+- Backend architecture and development in Django Rest Framework, .NET core, and Node.js.
 
-- Backend design and development in Django Rest Framework ORM and custom mix-in's, as well as .NET core with Entity Framework. 
-
-- Issue tracking and AGILE storyboarding (Kanban) with YouTrack integrated into Jetbrains IDE.
-
-- GIT repository management and maintenance.
+- Writing unit tests for logical components (Jest), as well as end-to-end regression tests (WebDriver).
 
 #### Associate Developer at Verity Inst.
 June 2018 - Current
 
-- Project design, feature development, and testing of C#, C++, and Python applications. 
-.NET Framework, MFC, Windows Forms with Agile methodology (Scrum).
+- Test-Driven-Development of C#, C++, and Python applications. Cross-platform (Windows & Linux) solutions for
+TCP/IP communication with embedded systems.
 
-- Translating customer requests to technical requirements.
+- Translating customer requests to technical requirements. 
+Consistent and punctual workflow by breaking up requirements into tasks and backlog items (Scrum).
 
-- Custom SWIG interface file creation and maintenance for automated C++ .dll wrapping for C# and Python.
+- Custom SWIG interface file creation and maintenance for automated C/C++ .dll wrapping for C# and Python.
 
-- Log file parsing and obfuscation using regular expressions.
-
-- Working with QA to address defects, and SCR's.
-
-- Source control with SVN.
-
-- Test-Driven-Development in C# with MSTest, and Python with NUnit and UnitTest.
+- Working close to QA in order to optimize test plans and address SCR's / defects. Source control with Git and SVN.
 
 <div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
 <h1 style="float: left; width: auto; margin: 0">Education</h1>
