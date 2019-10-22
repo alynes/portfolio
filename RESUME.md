@@ -32,12 +32,15 @@ Reactively rendering functional components using state and effect hooks.
 - Implementing custom transitions and animations with CSS keyframes and React-Transition-Group; 
 styling from scratch or utilizing Material-UI | Bootstrap frameworks. 
 
-- Backend architecture and development in Django Rest Framework, .NET core, and Node.
+- Backend REST architecture and development in Django Rest Framework, .NET core, and Node.
+
+- Event-driven microservices powered by AWS SQS.
 
 - Project management with YouTrack for Kanban storyboarding and issue tracking.
 Git source control.
 
 - Writing unit tests for logical components (Jest), as well as end-to-end regression tests (WebDriver).
+Continuous integration with CircleCI.
 
 #### Associate Developer at Verity Inst.
 June 2018 - Current
@@ -51,7 +54,9 @@ to expand legacy software and enable diverse interprocess communications.
 - Translating customer requests and technical requirements into accurate effort estimates. 
 Ensuring consistent and efficient workflow by delegating tasks and backlog items (Scrum).
 
-- Working with QA in order to optimize test plans and address SCR's / defects. 
+- Working with QA in order to optimize test plans and address SCR's / defects.
+
+- Source control in Subversion.
 
 <div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
 <h1 style="float: left; width: auto; margin: 0">Education</h1>
@@ -92,7 +97,7 @@ Ensuring consistent and efficient workflow by delegating tasks and backlog items
                 – <strong>Eric Abuta</strong><br/>
                 Verity Instruments, Inc<br/>
                 Software QA Supervisor<br/>
-                972-343-6767<br/>
+                972-977-5783<br/>
             </div>
         </div>
         <div class="col2">
@@ -105,53 +110,15 @@ Ensuring consistent and efficient workflow by delegating tasks and backlog items
     <div class="table-row">
         <div class="col1">
             <div class="p-quote">
-                "-------------------------------------------------- coming soon -------------------------------------------------"
-            </div>
-            <br/>
-            <div class="p-info">
-                – <strong>Tim Michals</strong><br/>
-                Verity Instruments, Inc<br/>
-                Senior Software Engineer<br/>
-                469-521-2812<br/>
-            </div>
-        </div>
-        <div class="col2">
-            <div>
-                Coworker at Verity Instruments 1+ years
-            </div>
-        </div>
-    </div>
-    <hr/>
-    <div class="table-row">
-        <div class="col1">
-            <div class="p-quote">
-                "-------------------------------------------------- coming soon -------------------------------------------------"
-            </div>
-            <br/>
-            <div class="p-info">
-                – <strong>Reagan Kirby</strong><br/>
-                Bipolar.IO<br/>
-                Software Architect<br/>
-                214-994-8511<br/>
-            </div>
-        </div>
-        <div class="col2">
-            <div>
-                Programming mentor for 2+ years
-            </div>
-        </div>
-    </div>
-    <hr/>
-    <div class="table-row">
-        <div class="col1">
-            <div class="p-quote">
-                "-------------------------------------------------- coming soon -------------------------------------------------"
+                "Working with Austin has been refreshing. He is sharp-witted, professional, and 
+                delightfully good spirited. I have worked with many developers and never have I met a 
+                more capable engineer or better communicator. Any company would be lucky to have him."
             </div>
             <br/>
             <div class="p-info">
                 – <strong>Oliver Smith</strong><br/>
                 Megalomedia Designs<br/>
-                Owner<br/>
+                Graphic Designer<br/>
                 214-228-7204<br/>
             </div>
         </div>
@@ -165,7 +132,10 @@ Ensuring consistent and efficient workflow by delegating tasks and backlog items
     <div class="table-row">
         <div class="col1">
             <div class="p-quote">
-                "-------------------------------------------------- coming soon -------------------------------------------------"
+                "Austin exemplifies working smarter.
+                He effortlessly finds opportunities for improvement and seizes them, 
+                increasing productivity and positivity in everything he does.
+                I am confident Austin will perform exceptionally in the face of any challenge thrown his way."
             </div>
             <br/>
             <div class="p-info">
@@ -182,6 +152,7 @@ Ensuring consistent and efficient workflow by delegating tasks and backlog items
         </div>
     </div>
     <hr/>
+
         
 </div>
 
