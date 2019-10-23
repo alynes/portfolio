@@ -24,39 +24,46 @@ Punctual and professional problem solver seeking engaging opportunities.
 
 April 2016 - Current
 
-- Frontend design and development primarily using React — ES6+ specs, transpiled by Babel and Webpack. 
+- Frontend design and development — HTML5, CSS3, ES6+ — transpiled by Babel and Webpack. 
 
 - Leveraging Redux, Axios, and Thunk for asynchronous actions / requests. 
-Reactively rendering functional components using state and effect hooks.
+<em>React</em>-ively rendering functional components using state and effect hooks.
 
-- Implementing custom transitions and animations with CSS keyframes and React-Transition-Group; 
-styling from scratch or utilizing Material-UI | Bootstrap frameworks. 
+- Designing layouts with CSS Grid and Flexbox. Styling from scratch or utilizing Material-UI | Bootstrap frameworks. 
+Custom transitions and animations with CSS keyframes and React-Transition-Group.
 
 - Backend REST architecture and development in Django Rest Framework, .NET core, and Node.
 
-- Event-driven microservices powered by AWS SQS.
+- Event-driven microservices development for dynamic application service workers powered by AWS SQS | RabbitMQ.
+
+- Automated resource management of cloud infrastructure on AWS with Cloudformation, Sceptre, and Troposphere.
+
+- Database design, implementation, and migrations in MySql and Sqlite (Entity Framework | Django ORM).
 
 - Project management with YouTrack for Kanban storyboarding and issue tracking.
-Git source control.
 
 - Writing unit tests for logical components (Jest), as well as end-to-end regression tests (WebDriver).
-Continuous integration with CircleCI.
+CI/CD with CircleCI; running unit tests before PR's are merged (Git).
 
 #### Associate Developer at Verity Inst.
 June 2018 - Current
 
 - Test-Driven-Development of C#, C++, and Python applications. Custom solutions for
-TCP/IP communication with embedded systems.
-
-- Custom SWIG interface file creation and maintenance for automated C/C++ .dll wrapping 
-to expand legacy software and enable diverse interprocess communications.
+TCP/IP communications with embedded systems.
 
 - Translating customer requests and technical requirements into accurate effort estimates. 
 Ensuring consistent and efficient workflow by delegating tasks and backlog items (Scrum).
 
-- Working with QA in order to optimize test plans and address SCR's / defects.
+- Custom SWIG interface file creation and maintenance for automated C/C++ .dll wrapping.
 
-- Source control in Subversion.
+- Parsing and selective obfuscation for large sets of unstructured data (Python: regex).
+
+- Working with QA in order to optimize test plans and address feature requests / defects.
+
+- SQL Server database maintenance and migrations.
+
+- Subversion source control.
+
 
 <div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
 <h1 style="float: left; width: auto; margin: 0">Education</h1>
@@ -75,6 +82,8 @@ Ensuring consistent and efficient workflow by delegating tasks and backlog items
 - Dean's List and National Honor Society nominated
 
 - S.O.L.I.D. programming paradigms
+
+- Linux server administration
 
 - Relational database programming, SQL
 
@@ -111,8 +120,8 @@ Ensuring consistent and efficient workflow by delegating tasks and backlog items
         <div class="col1">
             <div class="p-quote">
                 "Working with Austin has been refreshing. He is sharp-witted, professional, and 
-                delightfully good spirited. I have worked with many developers and never have I met a 
-                more capable engineer or better communicator. Any company would be lucky to have him."
+                delightfully good spirited. I have worked with many developers and never before had I met a 
+                better critical thinker or more capable engineer. Any company would be lucky to have him."
             </div>
             <br/>
             <div class="p-info">
@@ -135,7 +144,7 @@ Ensuring consistent and efficient workflow by delegating tasks and backlog items
                 "Austin exemplifies working smarter.
                 He effortlessly finds opportunities for improvement and seizes them, 
                 increasing productivity and positivity in everything he does.
-                I am confident Austin will perform exceptionally in the face of any challenge thrown his way."
+                I am confident Austin will continue to perform exceptionally in all challenges thrown his way."
             </div>
             <br/>
             <div class="p-info">
