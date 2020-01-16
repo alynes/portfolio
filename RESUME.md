@@ -20,11 +20,18 @@ Punctual and professional problem solver seeking engaging opportunities.
 
 <hr style="height: 2px; background-color: black; border: none;"/>
 
-#### Full Stack Engineer at Bipolar.IO 
+<h4 style="margin-block-end: 5px">Software Engineer at SharpEcho</h4> 
+December 2019 - Current
 
+- Back-end application development, testing, and maintenance for large scale energy-distribution finance systems
+(.NET core & Azure Cloud Services)
+
+- REST enabled microservice patterns and Agile, test-driven, methodologies.
+
+<h4 style="margin-block-end: 5px">Full Stack Engineer at Bipolar.IO</h4> 
 April 2016 - Current
 
-- Frontend design and development — HTML5, CSS3, ES6+ — transpiled by Babel and Webpack. 
+- Frontend design and development — HTML5, CSS3, ES6+ (React) — transpiled by Babel and Webpack. 
 
 - Leveraging Redux, Axios, and Thunk for asynchronous actions / requests. 
 <em>React</em>-ively rendering functional components using state and effect hooks.
@@ -45,8 +52,8 @@ Custom transitions and animations with CSS keyframes and React-Transition-Group.
 - Writing unit tests for logical components (Jest), as well as end-to-end regression tests (WebDriver).
 CI/CD with CircleCI; running unit tests before PR's are merged (Git).
 
-#### Associate Developer at Verity Inst.
-June 2018 - Current
+<h4 style="margin-block-end: 5px">Associate Developer at Verity Instruments</h4>
+June 2018 - December 2019
 
 - Test-Driven-Development of C#, C++, and Python applications. Custom solutions for
 TCP/IP communications with embedded systems.
@@ -62,8 +69,6 @@ Ensuring consistent and efficient workflow by delegating tasks and backlog items
 
 - SQL Server database maintenance and migrations.
 
-- Subversion source control.
-
 
 <div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
 <h1 style="float: left; width: auto; margin: 0">Education</h1>
@@ -72,12 +77,12 @@ Ensuring consistent and efficient workflow by delegating tasks and backlog items
 <hr style="height: 2px; background-color: black; border: none;"/>
 
 
-#### Tarrant County College
+<h4 style="margin-block-end: 5px">Tarrant County College</h4>
 2017 - 2019
 
-- Associates of Science - Information Technology: Programming, AAS. (December 2019)
+- Associates of Science - Information Technology: Programming, AAS.
 
-- Certificates 1 & 2 in Programming Field of Study
+- Programming Certificates 1 & 2 (IT, Programming: Field of Study)
 
 - Dean's List and National Honor Society nominated
 
