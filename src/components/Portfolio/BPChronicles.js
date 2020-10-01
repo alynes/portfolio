@@ -5,6 +5,7 @@ export default function BPChronicles() {
     return (
         <div className={"App-page"}>
             <h1>The Bipolar Chronicles</h1>
+            <span>Demo: </span><span><a href={"https://bipolar.azurewebsites.net/bipolar-chronicles-ii"}>The Bipolar Chronicles</a></span>
             <p>In the age of short attention spans, the wonder for content creators of all kinds is "how do we get people to pay attention?"
             I answered this question for a small music company based in Dallas by creating a world in which listeners can explore while they enjoy the music as well.</p>
             <p> Tap on different objects and characters to gain points and reveal the plot.</p>

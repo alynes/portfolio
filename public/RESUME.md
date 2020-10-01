@@ -23,34 +23,26 @@ Punctual and professional problem solver seeking engaging opportunities.
 <h4 style="margin-block-end: 5px">Software Engineer at SharpEcho</h4> 
 December 2019 - Current
 
-- Back-end application development, testing, and maintenance for large scale energy-distribution finance systems
-(.NET core & Azure Cloud Services)
+- Full stack design, development, and testing of critical finance systems (.NET, SQL Server, Angular 7, Typescript)
 
-- REST enabled microservice patterns and Agile, test-driven, methodologies.
+- Cross-functional team participant; product owner adviser and leader for frontend process improvement. 
 
-<h4 style="margin-block-end: 5px">Full Stack Engineer at Bipolar.IO</h4> 
+- Build and release management of microservice architecture integrated application (Azure Cloud Services)
+
+- Scrum Champion of the Month (July 2020 - FHLB Dallas)
+
+<h4 style="margin-block-end: 5px">Software Developer at Bipolar IO</h4> 
 April 2016 - Current
 
-- Frontend design and development — HTML5, CSS3, ES6+ (React) — transpiled by Babel and Webpack. 
+- Full stack application development for automated asset trading and content delivery applications (.NET core, MySql, React+Redux, Django RF, Postgres, Vue)
 
-- Leveraging Redux, Axios, and Thunk for asynchronous actions / requests. 
-<em>React</em>-ively rendering functional components using state and effect hooks.
+- Lead developer-contributor to coding standards and architectural guidelines.
 
-- Designing layouts with CSS Grid and Flexbox. Styling from scratch or utilizing Material-UI | Bootstrap frameworks. 
-Custom transitions and animations with CSS keyframes and React-Transition-Group.
+- Automation of resource management for cloud infrastructure on AWS (Docker, Cloudformation, Sceptre, Troposphere)
 
-- Backend REST architecture and development in Django Rest Framework, .NET core, and Node.
+- Scalable event-driven/serverless job processing (AWS Lambda, EC2+SQS / RabbitMQ)
 
-- Event-driven microservices development for dynamic application service workers powered by AWS SQS | RabbitMQ.
-
-- Automated resource management of cloud infrastructure on AWS with Cloudformation, Sceptre, and Troposphere.
-
-- Database design, implementation, and migrations in MySql and Sqlite (Entity Framework | Django ORM).
-
-- Project management with YouTrack for Kanban storyboarding and issue tracking.
-
-- Writing unit tests for logical components (Jest), as well as end-to-end regression tests (WebDriver).
-CI/CD with CircleCI; running unit tests before PR's are merged (Git).
+- Unit/regression test integration with Github-triggered CI/CD pipelines (CircleCI, NUnit, Jest, WebDriver)
 
 <h4 style="margin-block-end: 5px">Associate Developer at Verity Instruments</h4>
 June 2018 - December 2019
@@ -58,23 +50,19 @@ June 2018 - December 2019
 - Test-Driven-Development of C#, C++, and Python applications. Custom solutions for
 TCP/IP communications with embedded systems.
 
-- Translating customer requests and technical requirements into accurate effort estimates. 
-Ensuring consistent and efficient workflow by delegating tasks and backlog items (Scrum).
+- Translation of customer requests and technical requirements into accurate effort estimates — working with QA in order to optimize test plans and address feature requests / defects.
 
 - Custom SWIG interface file creation and maintenance for automated C/C++ .dll wrapping.
 
-- Parsing and selective obfuscation for large sets of unstructured data (Python: regex).
+- SQL Server database management.
 
-- Working with QA in order to optimize test plans and address feature requests / defects.
-
-- SQL Server database maintenance and migrations.
-
+<div style="height: 20px;"></div>
 
 <div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
 <h1 style="float: left; width: auto; margin: 0">Education</h1>
 </div>
 
-<hr style="height: 2px; background-color: black; border: none;"/>
+<hr style="height: 2px; background-color: black; border: none; width: 100%;"/>
 
 
 <h4 style="margin-block-end: 5px">Tarrant County College</h4>
@@ -166,8 +154,7 @@ Ensuring consistent and efficient workflow by delegating tasks and backlog items
         </div>
     </div>
     <hr/>
-
-        
+     
 </div>
 
 <style>
