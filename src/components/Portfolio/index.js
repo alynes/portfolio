@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { Link } from "react-router-dom";
 
 // Material Design
@@ -6,7 +7,8 @@ import { makeStyles } from '@material-ui/core';
 import Divider from '@material-ui/core/Divider';
 
 // My Components
-import Carousel3D from '../Carousel3D.js';
+import Carousel3D from '../Carousel3D';
+import ThreeScene from './ThreeScene';
 
 const applications = [
     {
@@ -83,29 +85,41 @@ const useStyles = makeStyles(theme => ({
 export default function Portfolio() {
     const classes = useStyles();
 
+    const history = useHistory();
+
+    let handleChooseApp = (app) => {
+        history.push(`/${app.id}`);
+
+    }
+
     return (
-        <div className={"App-page"} style={{maxWidth: "80vw", margin: "auto"}}>
-            <div>
-                <div className={classes.grid}>
-                    {applications.map((app) => (
-                        <div key={app.id} className={classes.gridItemContainer}>
-                            <Link to={`/${app.id}`} style={{display: "flex", flexDirection: "column"}}>
-                                <h1 style={{textAlign: "center"}} className={"App-link"}>{app.name}</h1>
-                                <p style={{textAlign: "center"}} className={"App-link"}>{app.description}</p>
-                                <div className={classes.carouselContainer}>
-                                    <Carousel3D autoInterval={15}>
-                                        {app.src.map((path, index) => (
-                                            <video key={index} autoPlay muted loop className={"carousel-img"} src={process.env.PUBLIC_URL + path} />
-                                        ))}
-                                    </Carousel3D>
+        
+        <div className={'absolute-full-center'}>
+            <ThreeScene />
+
+            {/* <div className={"App-page"} style={{position: 'absolute', maxWidth: "80vw", margin: "auto", top: '10vh', right: '0', left: '0', pointerEvents: 'none'}}>
+                <div>
+                    <div className={classes.grid}>
+                        {applications.map((app) => (
+                            <div onClick={() => handleChooseApp(app)} key={app.id} className={classes.gridItemContainer}>
+                                <div style={{display: "flex", flexDirection: "column"}}>
+                                    <h1 style={{textAlign: "center"}} className={"App-link"}>{app.name}</h1>
+                                    <p style={{textAlign: "center"}} className={"App-link"}>{app.description}</p>
+                                    <div className={classes.carouselContainer}>
+                                        <Carousel3D autoInterval={15}>
+                                            {app.src.map((path, index) => (
+                                                <video key={index} autoPlay muted loop className={"carousel-img"} src={process.env.PUBLIC_URL + path} />
+                                            ))}
+                                        </Carousel3D>
+                                    </div>
                                 </div>
-                            </Link>
-                            <br/>
-                        </div>
-                    ))}
+                                <br/>
+                            </div>
+                        ))}
+                    </div>
+                    <Divider />
                 </div>
-                <Divider />
-            </div>
+            </div> */}
         </div>
     )
 }

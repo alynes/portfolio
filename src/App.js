@@ -10,6 +10,9 @@ import SocialAutomator from "./components/Portfolio/SocialAutomator";
 import BPChronicles from "./components/Portfolio/BPChronicles";
 import Resume from './components/Resume.js';
 
+
+
+
 export default function App() {
     return (
         <div className="App">

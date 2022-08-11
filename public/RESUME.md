@@ -20,20 +20,23 @@ Punctual and professional problem solver seeking engaging opportunities.
 
 <hr style="height: 2px; background-color: black; border: none;"/>
 
-<h4 style="margin-block-end: 5px">Software Engineer at SharpEcho</h4> 
-December 2019 - Current
+<h4 style="margin-block-end: 5px">Senior Fullstack .NET Developer II at FHLB Dallas</h4> 
+October 2020 - Current
 
-- Full stack design, development, and testing of critical finance systems (.NET, SQL Server, Angular 7, Typescript)
+- Guide scrum development teams through end-to-end projects. Liason between other developers and business teams. Bastion of SOLID principles and development best-practices. Team representative for enterprise-wide technical discussions.
 
-- Cross-functional team participant; product owner adviser and leader for frontend process improvement. 
+- Event based cloud infrastructure integration with 3rd party and on-prem systems. Real-time and batch processes spanning multiple applications. Azure cloud infrastructure with on-prem permissions and connectivity. Complex dependencies, API and file-based connections and services. Function App, Service bus, ASE, Managed Identities, Sql Server Agent Jobs, SSIS.
 
-- Build and release management of microservice architecture integrated application (Azure Cloud Services)
+- Technical interview team member. Improved technical interview process and valued candidate aquisition. 
 
-- Scrum Champion of the Month (July 2020 - FHLB Dallas)
+- Build and release management of regulated bank level security microservice architecture integrated applications (Azure Cloud Services)
 
-<h4 style="margin-block-end: 5px">Software Developer at Bipolar IO</h4> 
+- Data integrity and audit compliance 
+
+<h4 style="margin-block-end: 5px">Senior Software Engineer at Bipolar IO</h4> 
 April 2016 - Current
 
+- Design and lead intern program, 
 - Full stack application development for automated asset trading and content delivery applications (.NET core, MySql, React+Redux, Django RF, Postgres, Vue)
 
 - Lead developer-contributor to coding standards and architectural guidelines.
@@ -43,6 +46,17 @@ April 2016 - Current
 - Scalable event-driven/serverless job processing (AWS Lambda, EC2+SQS / RabbitMQ)
 
 - Unit/regression test integration with Github-triggered CI/CD pipelines (CircleCI, NUnit, Jest, WebDriver)
+  
+<h4 style="margin-block-end: 5px">Software Engineer at SharpEcho</h4> 
+December 2019 - October 2020
+
+- Full stack design, development, and testing of critical finance systems (.NET, SQL Server, Angular 7, Typescript)
+
+- Cross-functional team participant; product owner adviser and leader for frontend process improvement. 
+
+- Build and release management of microservice architecture integrated application (Azure Cloud Services)
+
+- Scrum Champion of the Month (July 2020 - FHLB Dallas)
 
 <h4 style="margin-block-end: 5px">Associate Developer at Verity Instruments</h4>
 June 2018 - December 2019
@@ -65,7 +79,16 @@ TCP/IP communications with embedded systems.
 <hr style="height: 2px; background-color: black; border: none; width: 100%;"/>
 
 
+<h4 style="margin-block-end: 5px">Microsoft</h4>
+
+2020 - 2022
+
+- Microsoft Certified: Azure Developer Associate
+
+- Microsoft Certified: Azure Fundamentals
+
 <h4 style="margin-block-end: 5px">Tarrant County College</h4>
+
 2017 - 2019
 
 - Associates of Science - Information Technology: Programming, AAS.

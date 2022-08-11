@@ -95,7 +95,7 @@ export default function Layout({ children, location }) {
                 </nav>
             </div>
             <div id={"content-area"}>
-                <br /><br />
+                {/* <br /><br /> */}
                 {children}
             </div>
         </div>

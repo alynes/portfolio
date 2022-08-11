@@ -53,7 +53,7 @@ export default function Carousel3D({ children, initialIndex=0, autoInterval=0, a
     return (
         <Swipe threshold={30} x={index} setX={setIndex} setDirection={setDirection}>
             <div style={{display: "block", width: "100%", height: "200px"}}>
-                <div style={{position: "absolute", width: "100%", height: "100%", minHeight: "auto"}}>
+                <div style={{position: "absolute", width: "100%", height: "100%", minHeight: "auto", pointerEvents: 'all'}}>
                 <TransitionGroup
                     // This ensures that the next element receives the correct transition class BEFORE the transition
                     childFactory={element => React.cloneElement(
