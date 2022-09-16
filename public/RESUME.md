@@ -23,36 +23,36 @@ Punctual and professional problem solver seeking engaging opportunities.
 <h4 style="margin-block-end: 5px">Senior Fullstack .NET Developer II at FHLB Dallas</h4> 
 October 2020 - Current
 
-- Guide scrum development teams through end-to-end projects. Liason between other developers and business teams. Bastion of SOLID principles and development best-practices. Team representative for enterprise-wide technical discussions.
+- End to end audit compliant system design, development, deployment, and mantainence (.NET Core, Angular, Typescript, Azure Cloud Services, Sql Server, SSIS)
 
-- Event based cloud infrastructure integration with 3rd party and on-prem systems. Real-time and batch processes spanning multiple applications. Azure cloud infrastructure with on-prem permissions and connectivity. Complex dependencies, API and file-based connections and services. Function App, Service bus, ASE, Managed Identities, Sql Server Agent Jobs, SSIS.
+- Migration and integration of on-prem applications to Azure Cloud Services infrastructure
+  
+- Real-time and batch process solution development spanning multiple federally regulated financial applications 
+<!-- - (.NET Core, Azure Service Bus, Azure Function App, ASE, Managed Identity, SQL Server Agent)  -->
 
-- Technical interview team member. Improved technical interview process and valued candidate aquisition. 
-
-- Build and release management of regulated bank level security microservice architecture integrated applications (Azure Cloud Services)
-
-- Data integrity and audit compliance 
+- Administration of senior-level technical interviews, and improvement of interview process and quality candidate acquisition 
 
 <h4 style="margin-block-end: 5px">Senior Software Engineer at Bipolar IO</h4> 
 April 2016 - Current
 
-- Design and lead intern program, 
-- Full stack application development for automated asset trading and content delivery applications (.NET core, MySql, React+Redux, Django RF, Postgres, Vue)
-
-- Lead developer-contributor to coding standards and architectural guidelines.
+- Architecture design and feature development for automated asset trading and content delivery applications (.NET core, MySql, React+Redux, Django RF, Postgres, Vue)
 
 - Automation of resource management for cloud infrastructure on AWS (Docker, Cloudformation, Sceptre, Troposphere)
 
-- Scalable event-driven/serverless job processing (AWS Lambda, EC2+SQS / RabbitMQ)
+- Scalable event-driven serverless job processing (AWS Lambda, SQS, Python)
 
 - Unit/regression test integration with Github-triggered CI/CD pipelines (CircleCI, NUnit, Jest, WebDriver)
+
+- Leading contributor to coding standards and architectural guidelines
+
+- Utilization and education of software development interns
   
 <h4 style="margin-block-end: 5px">Software Engineer at SharpEcho</h4> 
 December 2019 - October 2020
 
 - Full stack design, development, and testing of critical finance systems (.NET, SQL Server, Angular 7, Typescript)
 
-- Cross-functional team participant; product owner adviser and leader for frontend process improvement. 
+- Cross-functional team participant — product owner adviser and bastion of frontend standards and process improvement 
 
 - Build and release management of microservice architecture integrated application (Azure Cloud Services)
 
@@ -61,14 +61,13 @@ December 2019 - October 2020
 <h4 style="margin-block-end: 5px">Associate Developer at Verity Instruments</h4>
 June 2018 - December 2019
 
-- Test-Driven-Development of C#, C++, and Python applications. Custom solutions for
-TCP/IP communications with embedded systems.
+- Test-Driven-Development of C#, C++, and Python applications — custom solutions for TCP/IP communication with embedded systems
 
-- Translation of customer requests and technical requirements into accurate effort estimates — working with QA in order to optimize test plans and address feature requests / defects.
+- Translation of customer requests and technical requirements into accurate effort estimates, working with QA in order to optimize test plans and address feature-requests/defects
 
-- Custom SWIG interface file creation and maintenance for automated C/C++ .dll wrapping.
+- Custom SWIG interface file creation and maintenance for automated C/C++ .dll wrapping
 
-- SQL Server database management.
+- SQL Server database management
 
 <div style="height: 20px;"></div>
 
@@ -98,10 +97,6 @@ TCP/IP communications with embedded systems.
 - Dean's List and National Honor Society nominated
 
 - S.O.L.I.D. programming paradigms
-
-- Linux server administration
-
-- Relational database programming, SQL
 
 <div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
 <h1 style="float: left; width: auto; margin: 0">References</h1>
