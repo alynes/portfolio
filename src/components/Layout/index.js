@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-// Material Design
 import { makeStyles } from '@material-ui/core';
 import MUIDrawer from '@material-ui/core/Drawer';
 
-// My components
 import MyDrawer from './Drawer.js';
 import MyNavbar from './Navbar.js';
-import Swipe from '../Swipe.js';
+import Swipe from '../../components/Utility/Swipe.js';
 
 // Styles
 const drawerWidth = 270;
@@ -67,8 +65,8 @@ export default function Layout({ children, location }) {
 
     const drawer = (
         <MUIDrawer
-            variant="temporary"
-            anchor={"left"}
+            variant='temporary'
+            anchor={'left'}
             open={drawerOpen}
             onClose={handleDrawerToggle}
             classes={{
@@ -84,18 +82,18 @@ export default function Layout({ children, location }) {
 
     return(
         <div>
-            <div>
+            <div style={{height: '48px'}}>
                 <Swipe x={swipeIndex} setX={setSwipeIndex} threshold={50} >
                     <MyNavbar handleDrawerToggle={handleDrawerToggle}/>
                 </Swipe>
-                <nav className={classes.drawer} aria-label="menu items">
+                <nav className={classes.drawer} aria-label='menu items'>
                     <Swipe x={swipeIndex} setX={setSwipeIndex} threshold={50} >
                         {drawer}
                     </Swipe>
                 </nav>
             </div>
-            <div id={"content-area"}>
-                <br /><br />
+            <div style={{pointerEvents: 'all'}} id={'content-area'} class={'App-content'}>
+                {/* <br /><br /> */}
                 {children}
             </div>
         </div>

@@ -1,25 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
-// Material Design
 import { makeStyles } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-
 import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import RecentActorsIcon from '@material-ui/icons/RecentActors';
 import PermMediaIcon from '@material-ui/icons/PermMedia';
+import RouteConstants from '../../constant/RouteConstants';
+import UrlConstants from '../../constant/UrlConstants';
 
 // Styles
 const useStyles = makeStyles(theme => ({
     nav: {
         padding: '6px',
         [theme.breakpoints.down('xs')]: {
-            display: 'none',
-
+            //display: 'none',
         }
     },
     navButton: {
@@ -35,45 +34,47 @@ const useStyles = makeStyles(theme => ({
  */
 export default function Navbar({ handleDrawerToggle }) {
     const classes = useStyles();
+    const history = useHistory();
+
     return (
-        <AppBar position="fixed" style={{display: "block"}}>
+        <AppBar position='fixed' style={{display: 'block', pointerEvents: 'all', touchAction: 'none'}}>
             <Toolbar>
                 <IconButton
-                    color="inherit"
-                    aria-label="open drawer"
-                    edge="start"
+                    color='inherit'
+                    aria-label='open drawer'
+                    edge='start'
                     onClick={handleDrawerToggle}
                 >
                     <MenuIcon />
                 </IconButton>
                 <div style={{flex: 1}} />
-                <Link to={""}>
+                <Link to={RouteConstants.Portfolio}>
                     <Button className={classes.navButton}>
                         <PermMediaIcon />
-                        <Typography variant="p" noWrap className={classes.nav}>
+                        <Typography variant='p' noWrap className={classes.nav}>
                             Portfolio
                         </Typography>
                     </Button>
                 </Link>
-                <div style={{width: "10px", textAlign: "center"}}>
+                <div style={{width: '10px', textAlign: 'center'}}>
                     |
                 </div>
-                <Link to={"/resume/"}>
+                <Link to={history.location.pathname.indexOf(RouteConstants.Resume) > -1 ? RouteConstants.Home : RouteConstants.Resume}>
                     <Button className={classes.navButton}>
                         <RecentActorsIcon/>
-                        <Typography variant="p" noWrap className={classes.nav}>
+                        <Typography variant='p' noWrap className={classes.nav}>
                             Resumé
                         </Typography>
                     </Button>
                 </Link>
-                <div style={{width: "10px", textAlign: "center"}}>
+                <div style={{width: '10px', textAlign: 'center'}}>
                     |
                 </div>
                 <IconButton
-                    edge={"end"}
+                    edge={'end'}
                 >
-                    <a href={"https://github.com/alynes/portfolio/"} style={{display: 'inline-block', height: '32px'}}>
-                        <img style={{height: "100%", margin: "auto"}} src={process.env.PUBLIC_URL + "/github-mark.png"} alt={"create response"}/>
+                    <a href={UrlConstants.MyGithubPortfolioRepo} style={{display: 'inline-block', height: '32px'}}>
+                        <img style={{height: '100%', margin: 'auto'}} src={process.env.PUBLIC_URL + '/github-mark.png'} alt={'create response'}/>
                     </a>
                 </IconButton>
             </Toolbar>

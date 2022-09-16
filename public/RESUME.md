@@ -20,41 +20,54 @@ Punctual and professional problem solver seeking engaging opportunities.
 
 <hr style="height: 2px; background-color: black; border: none;"/>
 
+<h4 style="margin-block-end: 5px">Senior Fullstack .NET Developer II at FHLB Dallas</h4> 
+October 2020 - Current
+
+- End to end audit compliant system design, development, deployment, and mantainence (.NET Core, Angular, Typescript, Azure Cloud Services, Sql Server, SSIS)
+
+- Migration and integration of on-prem applications to Azure Cloud Services infrastructure
+  
+- Real-time and batch process solution development spanning multiple federally regulated financial applications 
+<!-- - (.NET Core, Azure Service Bus, Azure Function App, ASE, Managed Identity, SQL Server Agent)  -->
+
+- Administration of senior-level technical interviews, and improvement of interview process and quality candidate acquisition 
+
+<h4 style="margin-block-end: 5px">Senior Software Engineer at Bipolar IO</h4> 
+April 2016 - Current
+
+- Architecture design and feature development for automated asset trading and content delivery applications (.NET core, MySql, React+Redux, Django RF, Postgres, Vue)
+
+- Automation of resource management for cloud infrastructure on AWS (Docker, Cloudformation, Sceptre, Troposphere)
+
+- Scalable event-driven serverless job processing (AWS Lambda, SQS, Python)
+
+- Unit/regression test integration with Github-triggered CI/CD pipelines (CircleCI, NUnit, Jest, WebDriver)
+
+- Leading contributor to coding standards and architectural guidelines
+
+- Utilization and education of software development interns
+  
 <h4 style="margin-block-end: 5px">Software Engineer at SharpEcho</h4> 
-December 2019 - Current
+December 2019 - October 2020
 
 - Full stack design, development, and testing of critical finance systems (.NET, SQL Server, Angular 7, Typescript)
 
-- Cross-functional team participant; product owner adviser and leader for frontend process improvement. 
+- Cross-functional team participant — product owner adviser and bastion of frontend standards and process improvement 
 
 - Build and release management of microservice architecture integrated application (Azure Cloud Services)
 
 - Scrum Champion of the Month (July 2020 - FHLB Dallas)
 
-<h4 style="margin-block-end: 5px">Software Developer at Bipolar IO</h4> 
-April 2016 - Current
-
-- Full stack application development for automated asset trading and content delivery applications (.NET core, MySql, React+Redux, Django RF, Postgres, Vue)
-
-- Lead developer-contributor to coding standards and architectural guidelines.
-
-- Automation of resource management for cloud infrastructure on AWS (Docker, Cloudformation, Sceptre, Troposphere)
-
-- Scalable event-driven/serverless job processing (AWS Lambda, EC2+SQS / RabbitMQ)
-
-- Unit/regression test integration with Github-triggered CI/CD pipelines (CircleCI, NUnit, Jest, WebDriver)
-
 <h4 style="margin-block-end: 5px">Associate Developer at Verity Instruments</h4>
 June 2018 - December 2019
 
-- Test-Driven-Development of C#, C++, and Python applications. Custom solutions for
-TCP/IP communications with embedded systems.
+- Test-Driven-Development of C#, C++, and Python applications — custom solutions for TCP/IP communication with embedded systems
 
-- Translation of customer requests and technical requirements into accurate effort estimates — working with QA in order to optimize test plans and address feature requests / defects.
+- Translation of customer requests and technical requirements into accurate effort estimates, working with QA in order to optimize test plans and address feature-requests/defects
 
-- Custom SWIG interface file creation and maintenance for automated C/C++ .dll wrapping.
+- Custom SWIG interface file creation and maintenance for automated C/C++ .dll wrapping
 
-- SQL Server database management.
+- SQL Server database management
 
 <div style="height: 20px;"></div>
 
@@ -65,7 +78,16 @@ TCP/IP communications with embedded systems.
 <hr style="height: 2px; background-color: black; border: none; width: 100%;"/>
 
 
+<h4 style="margin-block-end: 5px">Microsoft</h4>
+
+2020 - 2022
+
+- Microsoft Certified: Azure Developer Associate
+
+- Microsoft Certified: Azure Fundamentals
+
 <h4 style="margin-block-end: 5px">Tarrant County College</h4>
+
 2017 - 2019
 
 - Associates of Science - Information Technology: Programming, AAS.
@@ -75,10 +97,6 @@ TCP/IP communications with embedded systems.
 - Dean's List and National Honor Society nominated
 
 - S.O.L.I.D. programming paradigms
-
-- Linux server administration
-
-- Relational database programming, SQL
 
 <div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
 <h1 style="float: left; width: auto; margin: 0">References</h1>

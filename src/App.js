@@ -1,51 +1,60 @@
-import React from 'react';
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { CSSTransition } from 'react-transition-group';
+
+import Layout from './components/Layout/index.js';
+import Portfolio from './components/Pages/Portfolio/index.js';
+import Resume from './components/Pages/Resume/index.js';
+import MarkdownUtils from './utility/MarkdownUtils';
+import RouteConstants from './constant/RouteConstants';
+
 import './App.css';
 
-// My Components
-import Layout from './components/Layout/index.js';
-import Portfolio from './components/Portfolio/index.js';
-import TradeBoy from "./components/Portfolio/TradeBoy";
-import SocialAutomator from "./components/Portfolio/SocialAutomator";
-import BPChronicles from "./components/Portfolio/BPChronicles";
-import Resume from './components/Resume.js';
-
 export default function App() {
+    let resumePath = `${process.env.PUBLIC_URL}${RouteConstants.ResumeMd}`;
+    const [loadedResumeData, setLoadedResumeData] = useState(null);
+
+    useEffect(() => {
+        const loadResume = async () => setLoadedResumeData(await MarkdownUtils.loadFile(resumePath));
+        loadResume().catch(console.error);
+
+        return () => {
+            setLoadedResumeData(false);
+        }
+    }, [])
+
     return (
-        <div className="App">
+        <div className='App'>
             <Router>
                 <Switch>
                     <Route
                         exact
-                        path={"/resume/print"}
-                        render={props => <Resume {...props}/>}
+                        path={RouteConstants.ResumePrint}
+                        render={props => <Resume loadedResumeFile={loadedResumeData} />}
                     />
                     <Layout>
                         <Route
-                            exact
-                            path={"/"}
+                            path={'/'}
                             render={props => <Portfolio {...props}/>}
                         />
-                        <Route
-                            exact
-                            path={"/resume"}
-                            render={props => <Resume {...props}/>}
-                        />
-                        <Route
-                            exact
-                            path={`/trade-boy`}
-                            component={TradeBoy}/>
-                        <Route
-                            exact
-                            path={`/social-automator`}
-                            component={SocialAutomator}/>
-                        <Route
-                            exact
-                            path={`/bp-chronicles`}
-                            component={BPChronicles}/>
+
+                        <Route exact path={RouteConstants.Resume}>
+                            {({ match }) => (
+                                <CSSTransition
+                                    in={match !== null}
+                                    timeout={400}
+                                    classNames='transition-resume'
+                                    unmountOnExit
+                                >
+                                    <Resume loadedResumeFile={loadedResumeData} />
+                                </CSSTransition>
+                            )}
+                        </Route>
+                        
                     </Layout>
                 </Switch>
             </Router>
         </div>
     );
+
 }
