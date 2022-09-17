@@ -2,23 +2,23 @@
 <h4 style="margin-block-end: 0"> Austin Lynes </h4>
 <p style="margin-block-start: 0">
 469-268-2683 | aus10lynes@gmail.com<br/>
-[<a href="https://github.com/alynes">github.com/alynes</a> | <a href="https://linkedin.com/in/alynes">linkedin.com/alynes</a>]<br/>
+[<a href="https://linkedin.com/in/alynes">linkedin.com/alynes</a> | <a href="https://github.com/alynes">github.com/alynes</a>]<br/>
 </p>
 
-<div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
-<h1 style="float: left; width: auto; margin: 0">Objective</h1>
+<div class="section-title-container">
+<h1 class="section-title">Objective</h1>
 </div>
 
-<hr style="height: 2px; background-color: black; border: none;"/>
+<hr class="section-hr" />
 
 Punctual and professional problem solver seeking engaging opportunities.
 
-<div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
-<h1 style="float: left; width: auto; margin: 0">Experience</h1>
+<div class="section-title-container">
+<h1 class="section-title">Experience</h1>
 <div style="float: left">[</div><a href="https://alynes.github.io/portfolio/" style="float: left">Portfolio</a>]
 </div>
 
-<hr style="height: 2px; background-color: black; border: none;"/>
+<hr class="section-hr" />
 
 <h4 style="margin-block-end: 5px">Senior Fullstack .NET Developer II at FHLB Dallas</h4> 
 October 2020 - Current
@@ -46,8 +46,9 @@ April 2016 - Current
 - Leading contributor to coding standards and architectural guidelines
 
 - Utilization and education of software development interns
+
   
-<h4 style="margin-block-end: 5px">Software Engineer at SharpEcho</h4> 
+<h4 class="page-break" style="margin-block-end: 5px;">Software Engineer at SharpEcho</h4> 
 December 2019 - October 2020
 
 - Full stack design, development, and testing of critical finance systems (.NET, SQL Server, Angular 7, Typescript)
@@ -71,11 +72,11 @@ June 2018 - December 2019
 
 <div style="height: 20px;"></div>
 
-<div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
-<h1 style="float: left; width: auto; margin: 0">Education</h1>
+<div class="section-title-container">
+<h1 class="section-title">Education</h1>
 </div>
 
-<hr style="height: 2px; background-color: black; border: none; width: 100%;"/>
+<hr class='section-hr' />
 
 
 <h4 style="margin-block-end: 5px">Microsoft</h4>
@@ -98,20 +99,20 @@ June 2018 - December 2019
 
 - S.O.L.I.D. programming paradigms
 
-<div style="width: 100%; height: 2em; padding: 0.37em 0 0.37em 0;">
-<h1 style="float: left; width: auto; margin: 0">References</h1>
+<div class="section-title-container page-break">
+<h1 class="section-title">References</h1>
 </div>
 
-<hr style="height: 2px; background-color: black; border: none;"/>
+<hr class='section-hr' />
 
 <div class="my-table">
     <div class="table-row">
         <div class="col1">
-            <div class="p-quote">
+            <p class="p-quote">
                 "Austin is a very hardworking, diligent, and detail oriented worker. 
                 He is a good team player that goes out of his way to support the team in resolving any issues regardless of his level of domain knowledge. 
                 Always willing to research and learn news things to support the team. It has been a pleasure working with Austin."
-            </div>
+            </p>
             <br/>
             <div class="p-info">
                 – <strong>Eric Abuta</strong><br/>
@@ -121,7 +122,7 @@ June 2018 - December 2019
             </div>
         </div>
         <div class="col2">
-            <div>
+            <div class="p-quote">
                 Supervisor at Verity Instruments for 1+ years
             </div>
         </div>
@@ -129,11 +130,11 @@ June 2018 - December 2019
     <hr/>
     <div class="table-row">
         <div class="col1">
-            <div class="p-quote">
+            <p class="p-quote">
                 "Working with Austin has been refreshing. He is sharp-witted, professional, and 
                 delightfully good spirited. I have worked with many developers and never before had I met a 
                 better critical thinker or more capable engineer. Any company would be lucky to have him."
-            </div>
+            </p>
             <br/>
             <div class="p-info">
                 – <strong>Oliver Smith</strong><br/>
@@ -143,7 +144,7 @@ June 2018 - December 2019
             </div>
         </div>
         <div class="col2">
-            <div>
+            <div class="p-quote">
                 Client of Bipolar.IO for 1+ years
             </div>
         </div>
@@ -151,12 +152,12 @@ June 2018 - December 2019
     <hr/>
     <div class="table-row">
         <div class="col1">
-            <div class="p-quote">
+            <p class="p-quote">
                 "Austin exemplifies working smarter.
                 He effortlessly finds opportunities for improvement and seizes them, 
                 increasing productivity and positivity in everything he does.
                 I am confident Austin will continue to perform exceptionally in all challenges thrown his way."
-            </div>
+            </p>
             <br/>
             <div class="p-info">
                 – <strong>Indy Thapar</strong><br/>
@@ -166,7 +167,7 @@ June 2018 - December 2019
             </div>
         </div>
         <div class="col2">
-            <div>
+            <div class="p-quote">
                 Conglomerate leader for 3+ years
             </div>
         </div>
@@ -176,29 +177,58 @@ June 2018 - December 2019
 </div>
 
 <style>
+
+
 td {
     margin: 0;
     padding: 0;
-    
+}
+
+.section-hr {
+    display: block;
+    height: 2px;
+    background: transparent;
+    border: none;
+    border-top: solid 2px #aaa;
+    border-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.section-title-container {
+    width: 100%; 
+    height: 2em; 
+    padding: 0.37em 0 0.37em 0;
+}
+
+.section-title {
+    float: left; 
+    width: auto; 
+    margin: 0; 
+    page-break-before: always;
+}
+
+.page-break {
+    page-break-before: always;
 }
 
 .my-table {
     position: relative;
-    width: 100%;
 
 }
 
 .table-row {
     display: inline-block;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .col1 {
-    width: 80%;
+    width: 86%;
     display: flex;
     flex-direction: column;
     padding: 1.5%;
     float:left;
+    box-sizing: border-box;
 
 }
 
@@ -207,10 +237,12 @@ td {
     float: left;
     font-size: 0.5em;
     padding: 1.5%;
-   
+    box-sizing: border-box;
 }
 
 .p-quote {
+    margin: 1rem 0;
+    box-sizing: border-box;
     
 }
 
