@@ -6,23 +6,23 @@ export default function BPChronicles() {
 
     return (
         <Fragment>
-            <h1>The Bipolar Chronicles</h1>
-            <span>Demo: </span><span><a href={UrlConstants.BipolarEntertainment}>The Bipolar Chronicles</a></span>
-            <p>In the age of short attention spans, the wonder for content creators of all kinds is "how do we get people to pay attention?"
+            <h1>Bipolar Adventures</h1>
+            <span>Live Site: </span><span><a href={UrlConstants.BipolarEntertainment}>Bipolar Adventures</a></span>
+            <p>In the age of short attention spans, the question for content creators of all kinds is "how do we get people to pay attention?"
             I answered this question for a small music company based in Dallas by creating a world in which listeners can explore while they enjoy the music as well.</p>
             
             <p>The landing page is comprised of 3 layers of transparent video, which move and scale when clicking to go to different areas of the page. After choosing a record to play on the turntable, it takes you to an interactive music experience.</p>
             <p>I created the front end using React, with Redux and CSSTransitions, using Django Rest Framework in the backend.</p>
             <div className={'App-img-container'}>
-                <VideoLazy src={process.env.PUBLIC_URL + '/bp-landing-page.mp4'} />
+                <VideoLazy src={process.env.PUBLIC_URL + '/assets/bp-landing-page-compressed.mp4'} />
             </div>
             <p> A character follows your mouse, or walks to touch location. Tap on different objects and characters to gain points, fight baddies, and reveal the plot.</p>
             <div className={'App-img-container'}>
-                <VideoLazy src={process.env.PUBLIC_URL + '/bp-chronicles.mp4'} />
+                <VideoLazy src={process.env.PUBLIC_URL + '/assets/bp-chronicles-compressed.mp4'} />
             </div>
             <p>In level-building mode, admins can manipulate elements of each area. Objects may have different types, click events, and effects, including but not limited to: show/hide, teleportation, group-triggered, time-triggered, etc.</p>
             <div className={'App-img-container'}>
-                <VideoLazy src={process.env.PUBLIC_URL + '/bp-level-builder.mp4'} />
+                <VideoLazy src={process.env.PUBLIC_URL + '/assets/bp-level-builder-compressed.mp4'} />
             </div>
             <br/>
         </Fragment>

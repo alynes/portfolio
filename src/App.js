@@ -10,8 +10,9 @@ import RouteConstants from './constant/RouteConstants';
 
 import './App.css';
 
+const resumePath = `${process.env.PUBLIC_URL}/assets/${RouteConstants.ResumeMd}`;
+
 export default function App() {
-    let resumePath = `${process.env.PUBLIC_URL}${RouteConstants.ResumeMd}`;
     const [loadedResumeData, setLoadedResumeData] = useState(null);
 
     useEffect(() => {
@@ -30,12 +31,12 @@ export default function App() {
                     <Route
                         exact
                         path={RouteConstants.ResumePrint}
-                        render={props => <Resume loadedResumeFile={loadedResumeData} />}
+                        render={props => <Resume loadedResumeFile={loadedResumeData} isPrint />}
                     />
                     <Layout>
                         <Route
                             path={'/'}
-                            render={props => <Portfolio {...props}/>}
+                            render={props => <Portfolio {...props} />}
                         />
 
                         <Route exact path={RouteConstants.Resume}>
@@ -50,7 +51,7 @@ export default function App() {
                                 </CSSTransition>
                             )}
                         </Route>
-                        
+
                     </Layout>
                 </Switch>
             </Router>

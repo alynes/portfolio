@@ -37,7 +37,7 @@ export default function Navbar({ handleDrawerToggle }) {
     const history = useHistory();
 
     return (
-        <AppBar position='fixed' style={{display: 'block', pointerEvents: 'all', touchAction: 'none'}}>
+        <AppBar position='fixed' style={{display: 'block', pointerEvents: 'all', touchAction: 'none', backgroundColor: 'black'}}>
             <Toolbar>
                 <IconButton
                     color='inherit'
@@ -56,9 +56,6 @@ export default function Navbar({ handleDrawerToggle }) {
                         </Typography>
                     </Button>
                 </Link>
-                <div style={{width: '10px', textAlign: 'center'}}>
-                    |
-                </div>
                 <Link to={history.location.pathname.indexOf(RouteConstants.Resume) > -1 ? RouteConstants.Home : RouteConstants.Resume}>
                     <Button className={classes.navButton}>
                         <RecentActorsIcon/>
@@ -67,16 +64,6 @@ export default function Navbar({ handleDrawerToggle }) {
                         </Typography>
                     </Button>
                 </Link>
-                <div style={{width: '10px', textAlign: 'center'}}>
-                    |
-                </div>
-                <IconButton
-                    edge={'end'}
-                >
-                    <a href={UrlConstants.MyGithubPortfolioRepo} style={{display: 'inline-block', height: '32px'}}>
-                        <img style={{height: '100%', margin: 'auto'}} src={process.env.PUBLIC_URL + '/github-mark.png'} alt={'create response'}/>
-                    </a>
-                </IconButton>
             </Toolbar>
         </AppBar>
     )

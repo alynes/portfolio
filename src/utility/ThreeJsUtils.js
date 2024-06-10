@@ -1,4 +1,7 @@
 import * as THREE from 'three';
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
+
 
 export default class ThreeJsUtils {
     /*
@@ -13,7 +16,7 @@ export default class ThreeJsUtils {
         var boxMesh = new THREE.Mesh(mergeGeometry, {color: 'black', side: THREE.DoubleSide });
         
         let frontPlaneMesh = ThreeJsUtils.generateSimpleVideoTexturePlaneMesh(sizeWidth, sizeHeight, 0, 0, 0 + (sizeDepth / 2), 0, 0, 0, undefined, frontSrc);
-        let backPlaneMesh = ThreeJsUtils.generateSimpleVideoTexturePlaneMesh(sizeWidth, sizeHeight, 0, 0, 0 - (sizeDepth / 2), 0, Math.PI, 0, undefined, backSrc);
+        let backPlaneMesh = ThreeJsUtils.generateSimpleVideoTexturePlaneMesh(sizeWidth, sizeHeight, 0, 0, 0 - (sizeDepth / 2), 0, Math.PI, 0, 'black', backSrc);
 
         let leftPlaneMesh = ThreeJsUtils.generateSimpleVideoTexturePlaneMesh(sizeDepth, sizeHeight, 0 - (sizeWidth / 2), 0, 0, 0, Math.PI / 2, 0, 'black');
         let rightPlaneMesh = ThreeJsUtils.generateSimpleVideoTexturePlaneMesh(sizeDepth, sizeHeight, 0 + (sizeWidth / 2), 0, 0, 0, Math.PI / 2, 0, 'black');
@@ -33,7 +36,7 @@ export default class ThreeJsUtils {
 
         let planeTexture;
 
-        if (!videoSrc) {
+        if (videoSrc == null) {
             // Use basic texture
             planeTexture = undefined;
         }
@@ -93,7 +96,55 @@ export default class ThreeJsUtils {
         return ctx.canvas;
     }
 
+    static generate3DTextMesh = (positionVector, positionModVector, size, text) => {
+        const fontLoader = new FontLoader();
+
+        return new Promise((resolve, reject) => {
+            fontLoader.load('portfolio/fonts/ProFont for Powerline_Regular.json', function (font) {
+                // Create the text geometry
+                const textGeometry = new TextGeometry(text, {
+                    font: font,
+                    size: size / 100,
+                    height: 1.5,
+                    curveSegments: 12, 
+                    bevelEnabled: false,
+                });
+
+                // Center the geometry
+                textGeometry.computeBoundingBox();
+                const boundingBox = textGeometry.boundingBox;
+                const textWidth = boundingBox.max.x - boundingBox.min.x;
+                const textHeight = boundingBox.max.y - boundingBox.min.y;
+                const textDepth = boundingBox.max.z - boundingBox.min.z;
+
+                const offsetX = textWidth / 2;
+                const offsetY = textHeight / 2;
+                const offsetZ = textDepth / 2;
+
+                textGeometry.translate(-offsetX, -offsetY, -offsetZ);
+
+                // Create materials
+                const frontBackMaterial = new THREE.MeshStandardMaterial({ color: 0x000000 });
+                const sideMaterial = new THREE.MeshStandardMaterial({ color: 0x3e4bb0 });
+
+                // Combine materials
+                const materials = [
+                    frontBackMaterial,
+                    sideMaterial
+                ];
+        
+                const textMesh = new THREE.Mesh(textGeometry, materials);
+        
+                textMesh.position.set(positionVector.x, positionVector.y, positionVector.z);
+                textMesh.rotation.set(positionModVector.x, positionModVector.y, positionModVector.z);
+                
+                resolve(textMesh);
+            });
+        });
+    }
+
     static generateSimpleTextMesh = (positionVector, positionModVector, size, text) => {
+        
         const labelGeometry = new THREE.PlaneBufferGeometry(1, 1);
 
         const canvas = ThreeJsUtils.makeLabelCanvas(size, text);

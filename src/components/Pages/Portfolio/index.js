@@ -49,6 +49,7 @@ export default function Portfolio(props) {
                 open={showModal}
                 handleClose={handleCloseModal}
                 timeout={TRANSITION_TIMEOUT}
+                
             >
                 <Route path={RouteConstants.TradeBoy}>
                     <TradeBoy />

@@ -1,3 +1,12 @@
+:root {
+  --bg-color: #2d3162f5;
+  /* #32418ff7; */
+  /* #364099f0 */
+  /* #303668f0; */
+  /* #303668f0 */
+  --icon-color: #8ea2ff;
+  --icon-hover-color: #6b7ac1;
+}
 
 .App {
   text-align: center;
@@ -49,22 +58,22 @@
   justify-content: space-evenly;
   margin: auto;
   padding: 1vmin;
-  background-color: rgb(241,242,244);
-  border-radius: 4px;
+  background-color: #00000052;
+  border-radius: 1vmin;
 }
 
 .App-page {
-  position: absolute;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   align-items: center;
-  align-content: center;
   text-align: left;
-  background-color: white;
   pointer-events: all;
   overflow: auto;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -78,8 +87,15 @@
 .Markdown-container {
   position: relative;
   padding: 2vh 6vw;
-  background-color: white;
-  min-height: 100vh;
+  background-color: var(--bg-color); 
+  color: white;
+}
+
+.Markdown-container-print {
+  position: relative;
+  padding: 2vh 6vw;
+  background-color: white; 
+  color: black;
 }
 
 .Centered {
@@ -115,6 +131,26 @@
   touch-action: none;
 }
 
+.MuiDrawer-paper {
+  background-color: var(--bg-color) !important;
+}
+
+/* .MuiListItemIcon-root {
+  color: #8ea2ff !important;
+} */
+
+.MuiSvgIcon-root {
+  color: var(--icon-color) !important;
+}
+
+.MuiSvgIcon-root:hover {
+  color: var(--icon-hover-color) !important;
+}
+
+.MuiDivider-root {
+  background-color: black !important;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -139,7 +175,7 @@ iframe {
 /*  */
 
 p {
-  text-align: justify;
+  text-align: left;
 }
 
 h1 {
@@ -147,8 +183,16 @@ h1 {
 }
 
 a {
-  color: dodgerblue;
+  color: var(--icon-color);
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--icon-hover-color);
+}
+
+.Markdown-container-print a {
+  color: dodgerblue;
 }
 
 .transition-resume-enter {

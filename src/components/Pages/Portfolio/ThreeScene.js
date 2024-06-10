@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import * as THREE from 'three';
 import * as TWEEN from '@tweenjs/tween.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
@@ -27,8 +27,8 @@ export default function ThreeScene(props) {
     const cameraMoveTimeoutMs = 600;
 
     const portfolioItemOriginalY = 25;
-    const portfolioItemTextSize = 400;
-    const portfolioItemTextYPosMod = 20;
+    const portfolioItemTextSize = 300;
+    const portfolioItemTextYPosMod = 21;
 
     const cameraOriginalPosition = {x: 0, y: 30, z: 100};
     const cameraOriginalTarget = {x: 0, y: 10, z: 0};
@@ -47,6 +47,8 @@ export default function ThreeScene(props) {
     let isMovingOrbitControls = false;
     let mouseStartXY = {x: 0, y: 0};
     let mouseDistanceXY = {x: 0, y: 0};
+
+    const isCameraMoving = useRef(false);
     
     useEffect(() => {
         init();
@@ -64,7 +66,7 @@ export default function ThreeScene(props) {
             case skyMeshDescriptor:
                 if (isOriginalPosition) {
                     targetCameraX = bpChroniclesCubeMesh.position.x / 2;
-                    targetCameraY = bpChroniclesCubeMesh.position.y;
+                    targetCameraY = bpChroniclesCubeMesh.position.y + (bpChroniclesCubeMesh.geometry.parameters.height / 2);
                     targetCameraZ = cameraCloseUpPositionZ;
                     targetTargetX = bpChroniclesCubeMesh.position.x;
                     targetTargetY = bpChroniclesCubeMesh.position.y;
@@ -73,7 +75,7 @@ export default function ThreeScene(props) {
                     isOriginalPosition = false;
                 } else { 
                     targetCameraX = cameraOriginalPosition.x;
-                    targetCameraY = cameraOriginalPosition.y;
+                    targetCameraY = cameraOriginalPosition.y + (bpChroniclesCubeMesh.geometry.parameters.height / 2);
                     targetCameraZ = cameraOriginalPosition.z;
                     targetTargetX = cameraOriginalTarget.x;
                     targetTargetY = cameraOriginalTarget.y;
@@ -124,6 +126,8 @@ export default function ThreeScene(props) {
 
         lastClickedObject = closestObject; 
 
+        isCameraMoving.current = true;
+
         new TWEEN.Tween(camera.position).to({
             x: targetCameraX,
             y: targetCameraY,
@@ -137,6 +141,7 @@ export default function ThreeScene(props) {
                 camera.lookAt({x: targetTargetX, y: targetTargetY, z: targetTargetZ});
                 controls.target.set(targetTargetX, targetTargetY, targetTargetZ);
                 controls.update();
+                isCameraMoving.current = false;
             })
             .start();
 
@@ -173,7 +178,9 @@ export default function ThreeScene(props) {
         let hasMovedOrbitControls = (Math.abs(mouseDistanceXY.x) > hasMovedOrbitControlsThreshold 
             || Math.abs(mouseDistanceXY.y) > hasMovedOrbitControlsThreshold);
 
-        !hasMovedOrbitControls && onContainerClick(e);
+        if (!isCameraMoving.current) {
+            !hasMovedOrbitControls && onContainerClick(e);
+        }
 
         isMovingOrbitControls = false;
         mouseDistanceXY = {x: 0, y: 0};
@@ -223,7 +230,7 @@ export default function ThreeScene(props) {
             {
                 textureWidth: 512,
                 textureHeight: 512,
-                waterNormals: new THREE.TextureLoader().load(process.env.PUBLIC_URL + '/waternormals.jpg', function (texture) {
+                waterNormals: new THREE.TextureLoader().load(process.env.PUBLIC_URL + '/assets/waternormals.jpg', function (texture) {
                     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
                 }),
                 sunDirection: new THREE.Vector3(),
@@ -277,31 +284,26 @@ export default function ThreeScene(props) {
 
         // Portfolio Items
         bpChroniclesCubeMesh = ThreeJsUtils.generateSimpleVideoTextureBoxMesh(30, 30, 3, 0, portfolioItemOriginalY, -8, 0, 0, 0,
-            process.env.PUBLIC_URL + '/bp-chronicles.mp4', 'black');
+            process.env.PUBLIC_URL + '/assets/bp-chronicles-compressed.mp4');
         scene.add(bpChroniclesCubeMesh);
         bpChroniclesCubeMesh.descriptor = bpChroniclesCubeMeshDescriptor;
-        let bpChroniclesText = ThreeJsUtils.generateSimpleTextMesh(
-            {x: bpChroniclesCubeMesh.position.x, y: bpChroniclesCubeMesh.position.y + portfolioItemTextYPosMod, z: bpChroniclesCubeMesh.position.z},
-            bpChroniclesCubeMesh.rotation, portfolioItemTextSize, 'The Bipolar Chronicles');
-        scene.add(bpChroniclesText);
+        ThreeJsUtils.generate3DTextMesh({x: bpChroniclesCubeMesh.position.x, y: bpChroniclesCubeMesh.position.y + portfolioItemTextYPosMod, z: bpChroniclesCubeMesh.position.z},
+            bpChroniclesCubeMesh.rotation, portfolioItemTextSize, 'BIPOLAR ADVENTURES').then((textMesh) => { scene.add(textMesh) });
 
+        const tradeBoyImgSrc = process.env.PUBLIC_URL + '/assets/tb-buysell.mp4';
         tradeBoyCubeMesh = ThreeJsUtils.generateSimpleVideoTextureBoxMesh(30, 30, 3, -45, portfolioItemOriginalY, 0, 0, (Math.PI / 8), 0,
-            process.env.PUBLIC_URL + '/tb-buysell.mp4', 'black');
+            tradeBoyImgSrc);
         scene.add(tradeBoyCubeMesh);
         tradeBoyCubeMesh.descriptor = tradeBoyCubeMeshDescriptor;
-        let tradeBoyText = ThreeJsUtils.generateSimpleTextMesh(
-            {x: tradeBoyCubeMesh.position.x, y: tradeBoyCubeMesh.position.y + portfolioItemTextYPosMod, z: tradeBoyCubeMesh.position.z},
-            tradeBoyCubeMesh.rotation, portfolioItemTextSize, 'Trade Boy');
-        scene.add(tradeBoyText);
+        ThreeJsUtils.generate3DTextMesh({x: tradeBoyCubeMesh.position.x, y: tradeBoyCubeMesh.position.y + portfolioItemTextYPosMod, z: tradeBoyCubeMesh.position.z},
+            tradeBoyCubeMesh.rotation, portfolioItemTextSize, 'TRADE BOY').then((textMesh) => { scene.add(textMesh) });
 
         socialAutomatorCubeMesh = ThreeJsUtils.generateSimpleVideoTextureBoxMesh(30, 30, 3, 45, portfolioItemOriginalY, 0, 0, -1 * (Math.PI / 8), 0,
-            process.env.PUBLIC_URL + '/sa-schedule.mp4', 'black');
+            process.env.PUBLIC_URL + '/assets/sa-schedule.mp4');
         scene.add(socialAutomatorCubeMesh);
         socialAutomatorCubeMesh.descriptor = socialAutomatorCubeMeshDescriptor;
-        let socialAutomatorText = ThreeJsUtils.generateSimpleTextMesh(
-            {x: socialAutomatorCubeMesh.position.x, y: socialAutomatorCubeMesh.position.y + portfolioItemTextYPosMod, z: socialAutomatorCubeMesh.position.z},
-            socialAutomatorCubeMesh.rotation, portfolioItemTextSize, 'Social Automator');
-        scene.add(socialAutomatorText);
+        ThreeJsUtils.generate3DTextMesh({x: socialAutomatorCubeMesh.position.x, y: socialAutomatorCubeMesh.position.y + portfolioItemTextYPosMod, z: socialAutomatorCubeMesh.position.z},
+            socialAutomatorCubeMesh.rotation, portfolioItemTextSize, 'SOCIAL AUTOMATOR').then((textMesh) => { scene.add(textMesh) });
 
         // Light
         const light = new THREE.AmbientLight( 0x404040 ); // soft white light

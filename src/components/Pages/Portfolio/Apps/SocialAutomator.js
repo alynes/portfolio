@@ -13,7 +13,7 @@ export default function SocialAutomator() {
                 decreasing the necessary time and effort needed to grow and maintain a social presence online.
             </p>
             <div className={'App-img-container'}>
-                <VideoLazy src={process.env.PUBLIC_URL + '/sa-login.mp4'} />
+                <VideoLazy src={process.env.PUBLIC_URL + '/assets/sa-login.mp4'} />
             </div>
             <p>
                 What you are seeing here is a form to create "responses". If the bot detects certain patterns in text,
@@ -22,33 +22,33 @@ export default function SocialAutomator() {
                 and once the validation is satisfied, you may test your sentence generation.
             </p>
             <div className={'App-img-container'}>
-                <VideoLazy src={process.env.PUBLIC_URL + '/sa-response-edit.mp4'} />
+                <VideoLazy src={process.env.PUBLIC_URL + '/assets/sa-response-edit.mp4'} />
             </div>
             <p>
                 If it cannot find the pattern in the test text, it will not respond.
             </p>
 
             <div className={'App-img-container'}>
-                <VideoLazy src={process.env.PUBLIC_URL + '/sa-not-found.mp4'} />
+                <VideoLazy src={process.env.PUBLIC_URL + '/assets/sa-not-found.mp4'} />
             </div>
             <p>
                 OAuth2 authentication with 3rd party API's.
             </p>
             <div className={'App-img-container'}>
-                <VideoLazy src={process.env.PUBLIC_URL + '/sa-oauth2.mp4'} />
+                <VideoLazy src={process.env.PUBLIC_URL + '/assets/sa-oauth2.mp4'} />
             </div>
             <p>
                 Responses are used in tasks. Such as responding to comments on one's own or another's Instagram page and
                 responding to reply's made on comments while seeking new followers or responding to a page's bio.
             </p>
             <div className={'App-img-container'}>
-                <VideoLazy src={process.env.PUBLIC_URL + '/sa-task-create.mp4'} />
+                <VideoLazy src={process.env.PUBLIC_URL + '/assets/sa-task-create.mp4'} />
             </div>
             <p>
                 Those tasks are grouped into a weekly schedule and users actions are batched together by a worker service.
             </p>
             <div className={'App-img-container'}>
-                <VideoLazy src={process.env.PUBLIC_URL + '/sa-schedule.mp4'} />
+                <VideoLazy src={process.env.PUBLIC_URL + '/assets/sa-schedule.mp4'} />
             </div>
         </Fragment>
     )

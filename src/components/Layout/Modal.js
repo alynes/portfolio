@@ -13,7 +13,9 @@ const style = {
   width: '75vw',
   maxWidth: '100vmin',
   maxHeight: '75vh',
-  bgcolor: 'background.paper',
+  bgcolor: 'var(--bg-color)',
+  // #22285af0
+  color: 'white',
   borderRadius: '16px',
   outline: 'none',
   boxShadow: 24,

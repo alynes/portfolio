@@ -32,30 +32,29 @@ const useStyles = makeStyles(() => ({
 }));
 
 /**
- * The Drawer component is the sidebar for the layout.
+ *    The Drawer component is the sidebar for the layout.
  *
- * IN THIS APP:
- * Layout
+ *    @param { Function } handleDrawerToggle - 'handleDrawerToggle' opens/closes the side drawer.
  */
-export default function Drawer() {
+export default function Drawer({ handleDrawerToggle }) {
     const classes = useStyles();
 
-    const homeIcon = <PermMediaIcon />;
-    const resumeIcon = <RecentActorsIcon />;
+    const portfolioIcon = <PermMediaIcon color={'inherit'} />;
+    const resumeIcon = <RecentActorsIcon color={'inherit'} />;
 
     return (
         <div id={'drawer'} style={{pointerEvents: 'none'}}>
             {/* Drawer's main content */}
-            <div id={'drawer-main-content'} style={{display: 'inline-block', background: '#fff', pointerEvents: 'all'}}>
+            <div id={'drawer-main-content'} style={{display: 'inline-block', color: 'white', pointerEvents: 'all'}}>
                 <Toolbar>
                     <div className={classes.clockContainer}>
-                        <img className={classes.img} src={process.env.PUBLIC_URL + '/astronaut-flip.gif'} alt={'astronaut-flip'}/>
+                        <img className={classes.img} src={process.env.PUBLIC_URL + '/assets/astronaut-flip.gif'} alt={'astronaut-flip'}/>
                         <Clock />
                     </div>
                 </Toolbar>
                 <Divider />
-                <List>
-                    <DrawerItem text={'Portfolio'} url={RouteConstants.Portfolio} svg={homeIcon} />
+                <List onClick={() => handleDrawerToggle()}>
+                    <DrawerItem text={'Portfolio'} url={RouteConstants.Portfolio} svg={portfolioIcon} />
                     <DrawerItem text={'Resumé'} url={RouteConstants.Resume} svg={resumeIcon} />
                 </List>
                 <Divider />

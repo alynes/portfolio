@@ -17,27 +17,27 @@ export default function TradeBoy() {
                 I used the Binance REST API to make queries on the pricing data as well as to make trades directly and automatically on this platform.
             </p>
             <div className={'App-img-container'}>
-                <VideoLazy src={process.env.PUBLIC_URL + '/tb-login.mp4'} />
+                <VideoLazy src={process.env.PUBLIC_URL + '/assets/tb-login.mp4'} />
             </div>
             <p>
                 The calculations are done in the front end each time something changes, and then the math is double checked and
                 validation is applied by the server.
             </p>
             <div className={'App-img-container'}>
-                <VideoLazy src={process.env.PUBLIC_URL + '/tb-price.mp4'} />
+                <VideoLazy src={process.env.PUBLIC_URL + '/assets/tb-price.mp4'} />
             </div>
             <p>
                 These buy/sell modifiers make it easy to make many trades quickly.
             </p>
             <div className={'App-img-container'}>
-                <VideoLazy src={process.env.PUBLIC_URL + '/tb-buysell.mp4'} />
+                <VideoLazy src={process.env.PUBLIC_URL + '/assets/tb-buysell.mp4'} />
             </div>
             <p>
                 In-progress orders may be deleted or cancelled if already sent to the Binance exchange.
                 I set up an AWS EC2 instance to host the app, and he uses it every day.
             </p>
             <div className={'App-img-container'}>
-                <VideoLazy src={process.env.PUBLIC_URL + '/tb-delete-cancel.mp4'} />
+                <VideoLazy src={process.env.PUBLIC_URL + '/assets/tb-delete-cancel.mp4'} />
             </div>
             <br/>
         </Fragment>

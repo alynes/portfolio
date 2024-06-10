@@ -76,7 +76,7 @@ export default function Layout({ children, location }) {
                 keepMounted: true // Better open performance on mobile.
             }}
         >
-            <MyDrawer />
+            <MyDrawer handleDrawerToggle={handleDrawerToggle} />
         </MUIDrawer>
     );
 
@@ -92,7 +92,7 @@ export default function Layout({ children, location }) {
                     </Swipe>
                 </nav>
             </div>
-            <div style={{pointerEvents: 'all'}} id={'content-area'} class={'App-content'}>
+            <div style={{pointerEvents: 'all'}} id={'content-area'} className={'App-content'}>
                 {/* <br /><br /> */}
                 {children}
             </div>
