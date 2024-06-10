@@ -65,9 +65,9 @@ export default function Drawer({ handleDrawerToggle }) {
 
             {/* Bottom-fixed link section */}
             <div style={{position: 'fixed', bottom: 0, zIndex: -1, marginBottom: '8px'}}>
-                <div className={classes.link}>
+                {/* <div className={classes.link}>
                     <a href={UrlConstants.MyGithub}>github.com/alynes</a>
-                </div>
+                </div> */}
                 <div className={classes.link}>
                     <a href={UrlConstants.MyLinkedIn}>linkedin.com/alynes</a>
                 </div>

@@ -100,7 +100,7 @@ export default class ThreeJsUtils {
         const fontLoader = new FontLoader();
 
         return new Promise((resolve, reject) => {
-            fontLoader.load('portfolio/fonts/ProFont for Powerline_Regular.json', function (font) {
+            fontLoader.load(process.env.PUBLIC_URL + '/fonts/ProFont for Powerline_Regular.json', function (font) {
                 // Create the text geometry
                 const textGeometry = new TextGeometry(text, {
                     font: font,
