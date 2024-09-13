@@ -34,7 +34,6 @@ export default function TradeBoy() {
             </div>
             <p>
                 In-progress orders may be deleted or cancelled if already sent to the Binance exchange.
-                I set up an AWS EC2 instance to host the app, and he uses it every day.
             </p>
             <div className={'App-img-container'}>
                 <VideoLazy src={process.env.PUBLIC_URL + '/assets/tb-delete-cancel.mp4'} />
