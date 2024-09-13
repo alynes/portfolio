@@ -2,7 +2,7 @@
 <h4 style="margin-block-end: 0"> Austin Lynes </h4>
 <p style="margin-block-start: 0">
 469-268-2683 | aus10lynes@gmail.com<br/>
-[<a href="https://linkedin.com/in/alynes">linkedin.com/alynes</a>]<br/>
+[<a href="https://linkedin.com/in/alynes">linkedin.com/in/alynes</a>]<br/>
 </p>
 
 <div class="section-title-container">
